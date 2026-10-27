@@ -997,49 +997,147 @@ ${simulatorHtml}
           <div class="catalog-seasonal-block seasonal-pascoa-theme">
             <div class="catalog-seasonal-header">
               <div style="display: flex; align-items: center; gap: 1rem;">
-                <img src="pascoa/logo_pascoa.jpg" alt="Logo Páscoa Cherry Doces" class="seasonal-banner-logo-medallion" style="width: 72px; height: 72px;">
+                <img src="pascoa/logo_pascoa.jpg" alt="Logo Páscoa Cherry Doces" class="seasonal-banner-logo-medallion" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid #f08ea8;">
                 <div>
+                  <div style="display: inline-block; background: #f08ea8; color: #431f18; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 10px; border-radius: 999px; margin-bottom: 4px;">♥ EDIÇÃO ESPECIAL</div>
                   <h3 class="catalog-seasonal-title">🐰 Cardápio Especial de Páscoa ✦</h3>
-                  <p class="catalog-seasonal-sub">Ovos de Colher artesanais e delícias recheadas. Encomendas com antecedência para garantir sua vaga!</p>
+                  <p class="catalog-seasonal-sub">Ovos artesanais com chocolate nobre e recheios fartos. Faça sua encomenda com antecedência!</p>
                 </div>
               </div>
               <a href="cardapio_pascoa.pdf" target="_blank" rel="noopener noreferrer" class="btn-seasonal-pdf">
-                📄 Abrir Cardápio Oficial de Páscoa (PDF)
+                📄 Abrir Cardápio Oficial (PDF)
               </a>
             </div>
 
+            <!-- Avisos / Observações Importantes -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.2rem;">
+              <div style="flex: 1 1 280px; background: rgba(70, 40, 32, 0.65); border: 1px solid rgba(240, 142, 168, 0.4); border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 0.84rem; display: flex; align-items: center; gap: 0.5rem; color: #fff;">
+                <span style="font-size: 1.1rem;">🍫</span>
+                <span><strong>Opções com Chocolate Branco:</strong> acréscimo de <strong>R$ 10,00</strong></span>
+              </div>
+              <div style="flex: 1 1 280px; background: rgba(240, 142, 168, 0.2); border: 1px solid rgba(240, 142, 168, 0.5); border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 0.84rem; display: flex; align-items: center; gap: 0.5rem; color: #ffe6ee;">
+                <span style="font-size: 1.1rem;">✨</span>
+                <span><strong>Sabores Gourmet:</strong> acréscimo de <strong>R$ 10,00</strong> a mais!</span>
+              </div>
+            </div>
+
             <div class="seasonal-items-list">
-              <div class="catalog-item-row">
-                <div class="catalog-item-info">
-                  <h4>🍓 Ovo de Colher Ninho com Morangos Frescos</h4>
-                  <p>Casca de chocolate nobre com recheio farto de brigadeiro de Leite Ninho e morangos frescos selecionados.</p>
+              <!-- Item 1: Ovos de Colher -->
+              <div class="catalog-item-row" style="align-items: flex-start;">
+                <div class="catalog-item-info" style="flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">🥄 Ovos de Colher Recheados</h4>
+                    <span style="background: rgba(240,142,168,0.25); color: #ffd1dc; border: 1px solid rgba(240,142,168,0.4); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;">MAIS PEDIDO</span>
+                  </div>
+                  <p style="margin: 0.35rem 0 0.6rem 0;">Casca de chocolate nobre recheada com sua combinação favorita de sabor e confeitos artesanais. Acompanha colherzinha e caixa presenteável.</p>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">250g • R$ 65,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">350g • R$ 75,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">500g • R$ 85,00</span>
+                  </div>
                 </div>
-                <button class="btn-add-order" onclick="sendWhatsApp('Ovo de Colher Ninho com Morangos', 'Olá, Lorrany! Gostaria de encomendar o Ovo de Colher de Ninho com Morangos.')">Pedir</button>
+                <button class="btn-add-order" onclick="sendWhatsApp('Ovo de Colher Recheado', 'Olá, Lorrany! Gostaria de encomendar um Ovo de Colher Recheado para a Páscoa. Quais sabores estão disponíveis?')">Pedir</button>
               </div>
 
-              <div class="catalog-item-row">
-                <div class="catalog-item-info">
-                  <h4>🥥 Ovo de Colher Prestígio / Coco Cremoso</h4>
-                  <p>Casca de chocolate ao leite recheada com beijinho cremoso artesanal e flocos de coco selecionados.</p>
+              <!-- Item 2: Ovos Fechados Tradicionais -->
+              <div class="catalog-item-row" style="align-items: flex-start;">
+                <div class="catalog-item-info" style="flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">🍫 Ovos Fechados Tradicionais</h4>
+                    <span style="background: rgba(54,164,167,0.25); color: #a9e5e7; border: 1px solid rgba(54,164,167,0.4); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;">COM BOMBONS</span>
+                  </div>
+                  <p style="margin: 0.35rem 0 0.6rem 0;">Casca clássica de chocolate ao leite nobre, embalada em papel presenteável com bombons sortidos artesanais dentro.</p>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">250g • R$ 40,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">350g • R$ 45,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">500g • R$ 65,00</span>
+                  </div>
                 </div>
-                <button class="btn-add-order" onclick="sendWhatsApp('Ovo de Colher Prestígio')">Pedir</button>
+                <button class="btn-add-order" onclick="sendWhatsApp('Ovo Fechado Tradicional', 'Olá, Lorrany! Gostaria de encomendar um Ovo Fechado Tradicional para a Páscoa.')">Pedir</button>
               </div>
 
-              <div class="catalog-item-row">
-                <div class="catalog-item-info">
-                  <h4>🍫 Ovo de Colher Brigadeiro Gourmet &amp; Maracujá</h4>
-                  <p>Sabores intensos com brigadeiro tradicional gourmet ou mousse cremosa de maracujá em caixa presenteável.</p>
+              <!-- Item 3: Ovos Trufados Casca Dupla Recheada -->
+              <div class="catalog-item-row" style="align-items: flex-start;">
+                <div class="catalog-item-info" style="flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">🥥 Ovos Trufados (Casca Dupla Recheada)</h4>
+                    <span style="background: rgba(212,175,55,0.25); color: #ffd700; border: 1px solid rgba(212,175,55,0.4); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;">SUPER RECHEADO</span>
+                  </div>
+                  <p style="margin: 0.35rem 0 0.6rem 0;">A experiência definitiva: casca dupla inteiramente recheada por dentro com trufa macia e cremosa.</p>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">350g • R$ 90,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">500g • R$ 110,00</span>
+                    <span style="background: rgba(212,175,55,0.2); border: 1px solid rgba(212,175,55,0.4); color: #ffd700; border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 700;">1 Kg Família • R$ 150,00</span>
+                  </div>
                 </div>
-                <button class="btn-add-order" onclick="sendWhatsApp('Ovo de Colher Brigadeiro / Maracujá')">Pedir</button>
+                <button class="btn-add-order" onclick="sendWhatsApp('Ovo Trufado Casca Dupla', 'Olá, Lorrany! Gostaria de encomendar o Ovo Trufado com Casca Dupla Recheada.')">Pedir</button>
               </div>
 
-              <div class="catalog-item-row">
-                <div class="catalog-item-info">
-                  <h4>🥚 Ovos Tradicionais &amp; Trufados</h4>
-                  <p>Ovos de chocolate nobre embalados para presente com bombons artesanais no interior.</p>
+              <!-- Item 4: Mini Ovinhos (Kit Degustação & Presente) -->
+              <div class="catalog-item-row" style="align-items: flex-start;">
+                <div class="catalog-item-info" style="flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">🎁 Mini Ovinhos (Degustação &amp; Presente)</h4>
+                    <span style="background: rgba(54,164,167,0.25); color: #a9e5e7; border: 1px solid rgba(54,164,167,0.4); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;">KIT PRESENTE</span>
+                  </div>
+                  <p style="margin: 0.35rem 0 0.6rem 0;">Caixa decorada de presente contendo 4 mini ovinhos recheados com colherzinha, perfeita para experimentar vários sabores ou presentear com carinho.</p>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: rgba(54,164,167,0.25); border: 1px solid rgba(54,164,167,0.4); color: #a9e5e7; border-radius: 6px; padding: 3px 10px; font-size: 0.85rem; font-weight: 700;">Caixa com 4 unidades (50g cada) • R$ 55,00</span>
+                  </div>
                 </div>
-                <button class="btn-add-order" onclick="sendWhatsApp('Ovos Tradicionais e Trufados')">Pedir</button>
+                <button class="btn-add-order" onclick="sendWhatsApp('Kit Mini Ovinhos Degustação', 'Olá, Lorrany! Gostaria de encomendar a Caixa de Mini Ovinhos (Kit Degustação de 4 un.).')">Pedir</button>
               </div>
+
+              <!-- Item 5: Ovo Infantil com Brinde Surpresa -->
+              <div class="catalog-item-row" style="align-items: flex-start;">
+                <div class="catalog-item-info" style="flex: 1;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">🧸 Ovo Infantil com Chaveiro Surpresa</h4>
+                    <span style="background: rgba(240,142,168,0.25); color: #ffd1dc; border: 1px solid rgba(240,142,168,0.4); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;">BRINDE SURPRESA</span>
+                  </div>
+                  <p style="margin: 0.35rem 0 0.6rem 0;">O queridinho das crianças! Chocolate ao leite cremoso embalado com tema lúdico e um chaveiro fofo surpresa como brinde especial.</p>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">250g • R$ 45,00</span>
+                    <span style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-weight: 600;">350g • R$ 55,00</span>
+                  </div>
+                </div>
+                <button class="btn-add-order" onclick="sendWhatsApp('Ovo Infantil com Chaveiro Surpresa', 'Olá, Lorrany! Gostaria de encomendar o Ovo Infantil com Chaveiro Surpresa.')">Pedir</button>
+              </div>
+            </div>
+
+            <!-- Tabela / Seção de Sabores de Recheio -->
+            <div style="margin-top: 1.25rem; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 1rem 1.15rem;">
+              <h4 style="margin: 0 0 0.75rem 0; font-size: 0.98rem; color: #ffd1dc; display: flex; align-items: center; gap: 0.4rem;">
+                <span>✨</span> Sabores de Recheios Disponíveis
+              </h4>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+                <div style="background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 8px; border-left: 3px solid #36a4a7;">
+                  <strong style="color: #a9e5e7; font-size: 0.86rem; display: block; margin-bottom: 0.4rem;">🍫 Sabores Tradicionais:</strong>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                    <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Brigadeiro Tradicional</span>
+                    <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Sensação</span>
+                    <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Mousse de Maracujá</span>
+                    <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Mousse de Morango</span>
+                    <span style="background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Beijinho</span>
+                  </div>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 8px; border-left: 3px solid #f08ea8;">
+                  <strong style="color: #ffd1dc; font-size: 0.86rem; display: block; margin-bottom: 0.4rem;">⭐ Sabores Gourmet (+ R$ 10,00):</strong>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                    <span style="background: rgba(240,142,168,0.15); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Mousse de Ninho</span>
+                    <span style="background: rgba(240,142,168,0.15); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Café</span>
+                    <span style="background: rgba(240,142,168,0.15); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Prestígio</span>
+                    <span style="background: rgba(240,142,168,0.15); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Ninho com Morango</span>
+                    <span style="background: rgba(240,142,168,0.15); padding: 3px 8px; border-radius: 4px; font-size: 0.8rem;">Brigadeiro com Maracujá</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rodapé com Pagamento e Informações -->
+            <div style="margin-top: 1rem; font-size: 0.86rem; color: rgba(255,255,255,0.85); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; border-top: 1px dashed rgba(255,255,255,0.2); padding-top: 0.75rem;">
+              <span>💳 Aceitamos cartão de débito, crédito e PIX (parcelas acima de R$ 100)</span>
+              <span>📱 (11) 98575-1371 — Lorrany • Cherry Doces</span>
             </div>
           </div>
         `;
@@ -1495,10 +1593,10 @@ ${simulatorHtml}
   // 8. Helper global para envio direto pelo WhatsApp
   window.sendWhatsApp = function(productName, customText) {
     let msg = `Olá, Lorrany! Vim pelo site da Cherry Doces e gostaria de fazer uma encomenda.`;
-    if (productName) {
-      msg = `Olá, Lorrany! Vi o ${productName} no site da Cherry Doces e gostaria de encomendar! Poderia me passar os detalhes? ♡`;
-    } else if (customText) {
+    if (customText) {
       msg = customText;
+    } else if (productName) {
+      msg = `Olá, Lorrany! Vi o ${productName} no site da Cherry Doces e gostaria de encomendar! Poderia me passar os detalhes? ♡`;
     }
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
