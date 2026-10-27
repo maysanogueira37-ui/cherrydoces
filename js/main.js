@@ -390,6 +390,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4.5 Sistema Automatizado de Cardápios & Galerias Sazonais (Natal & Páscoa)
   // ==========================================================================
 
+  function checkAdminMode() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('admin') || urlParams.has('dev') || urlParams.has('simulador')) {
+      const val = (urlParams.get('admin') || urlParams.get('dev') || urlParams.get('simulador') || '').toLowerCase();
+      if (val === 'off' || val === 'false' || val === '0') {
+        localStorage.removeItem('cherry_admin_mode');
+        return false;
+      }
+      localStorage.setItem('cherry_admin_mode', 'true');
+      return true;
+    }
+    return localStorage.getItem('cherry_admin_mode') === 'true';
+  }
+
   function determineActiveSeason() {
     // 1. Verificar override via parâmetro URL (?season=natal | ?season=pascoa | ?season=off)
     const urlParams = new URLSearchParams(window.location.search);
@@ -398,10 +412,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return param.toLowerCase();
     }
 
-    // 2. Verificar preferência do simulador (localStorage)
-    const stored = localStorage.getItem('cherry_season_override');
-    if (stored && ['natal', 'pascoa', 'off'].includes(stored)) {
-      return stored;
+    // 2. Verificar preferência do simulador (apenas se estiver em modo admin)
+    if (checkAdminMode()) {
+      const stored = localStorage.getItem('cherry_season_override');
+      if (stored && ['natal', 'pascoa', 'off'].includes(stored)) {
+        return stored;
+      }
     }
 
     // 3. Regra Automática por Data Real:
@@ -642,8 +658,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function initSeasonalSystem() {
+    const isAdmin = checkAdminMode();
+    if (isAdmin) {
+      document.body.classList.add('admin-mode');
+    } else {
+      document.body.classList.remove('admin-mode');
+    }
+
     const activeSeason = determineActiveSeason();
-    const activeOverride = localStorage.getItem('cherry_season_override') || 'auto';
+    const activeOverride = (isAdmin && localStorage.getItem('cherry_season_override')) ? localStorage.getItem('cherry_season_override') : 'auto';
+
+    const simulatorHtml = isAdmin ? `
+      <div class="season-simulator-widget">
+        <span class="season-simulator-label">⚙️ Simulador de Temporadas (Apenas você vê):</span>
+        <div class="season-simulator-buttons">
+          <button class="season-sim-btn ${activeOverride === 'auto' ? 'active' : ''}" data-season="auto">Automático (Data)</button>
+          <button class="season-sim-btn ${activeSeason === 'natal' && activeOverride !== 'auto' ? 'active' : ''}" data-season="natal">🎄 Natal</button>
+          <button class="season-sim-btn ${activeSeason === 'pascoa' && activeOverride !== 'auto' ? 'active' : ''}" data-season="pascoa">🐰 Páscoa</button>
+          <button class="season-sim-btn ${activeSeason === 'off' && activeOverride !== 'auto' ? 'active' : ''}" data-season="off">⏳ Fora de Época</button>
+          <button class="season-sim-btn close-admin-btn" id="btnCloseAdminSim" title="Ocultar simulador e voltar à visão dos clientes" style="background: rgba(220,53,69,0.3); border-color: rgba(220,53,69,0.5); margin-left: 0.5rem;">✕ Ocultar</button>
+        </div>
+      </div>
+    ` : '';
 
     // Aplicar Tema de Decoração da Época e Trocar Logos (logo_natal / logo_pascoa / padrão)
     applySeasonalThemeAndLogos(activeSeason);
@@ -681,15 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 🖼️ Ver Fotos dos Doces de Natal (11 Fotos)
               </button>
             </div>
-            <div class="season-simulator-widget">
-              <span class="season-simulator-label">⚙️ Simulador de Temporadas:</span>
-              <div class="season-simulator-buttons">
-                <button class="season-sim-btn ${activeOverride === 'auto' ? 'active' : ''}" data-season="auto">Automático (Data)</button>
-                <button class="season-sim-btn ${activeSeason === 'natal' && activeOverride !== 'auto' ? 'active' : ''}" data-season="natal">🎄 Natal</button>
-                <button class="season-sim-btn ${activeSeason === 'pascoa' ? 'active' : ''}" data-season="pascoa">🐰 Páscoa</button>
-                <button class="season-sim-btn ${activeSeason === 'off' ? 'active' : ''}" data-season="off">⏳ Fora de Época</button>
-              </div>
-            </div>
+${simulatorHtml}
           </div>
         `;
       } else if (activeSeason === 'pascoa') {
@@ -716,15 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 🖼️ Ver Fotos de Páscoa (24 Fotos)
               </button>
             </div>
-            <div class="season-simulator-widget">
-              <span class="season-simulator-label">⚙️ Simulador de Temporadas:</span>
-              <div class="season-simulator-buttons">
-                <button class="season-sim-btn ${activeOverride === 'auto' ? 'active' : ''}" data-season="auto">Automático (Data)</button>
-                <button class="season-sim-btn ${activeSeason === 'natal' ? 'active' : ''}" data-season="natal">🎄 Natal</button>
-                <button class="season-sim-btn ${activeSeason === 'pascoa' && activeOverride !== 'auto' ? 'active' : ''}" data-season="pascoa">🐰 Páscoa</button>
-                <button class="season-sim-btn ${activeSeason === 'off' ? 'active' : ''}" data-season="off">⏳ Fora de Época</button>
-              </div>
-            </div>
+${simulatorHtml}
           </div>
         `;
       } else {
@@ -746,15 +766,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 🎂 Ver Nossos 10 Temas da Galeria
               </a>
             </div>
-            <div class="season-simulator-widget">
-              <span class="season-simulator-label">⚙️ Simulador de Temporadas:</span>
-              <div class="season-simulator-buttons">
-                <button class="season-sim-btn ${activeOverride === 'auto' ? 'active' : ''}" data-season="auto">Automático (Data)</button>
-                <button class="season-sim-btn ${activeSeason === 'natal' ? 'active' : ''}" data-season="natal">🎄 Natal</button>
-                <button class="season-sim-btn ${activeSeason === 'pascoa' ? 'active' : ''}" data-season="pascoa">🐰 Páscoa</button>
-                <button class="season-sim-btn ${activeSeason === 'off' && activeOverride !== 'auto' ? 'active' : ''}" data-season="off">⏳ Fora de Época</button>
-              </div>
-            </div>
+${simulatorHtml}
           </div>
         `;
       }
@@ -778,19 +790,60 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      // Eventos do simulador
-      bannerMount.querySelectorAll('.season-sim-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const targetSeason = btn.getAttribute('data-season');
-          if (targetSeason === 'auto') {
-            localStorage.removeItem('cherry_season_override');
-          } else {
-            localStorage.setItem('cherry_season_override', targetSeason);
-          }
-          initSeasonalSystem();
+      // Eventos do simulador (apenas se for admin)
+      if (isAdmin) {
+        bannerMount.querySelectorAll('.season-sim-btn[data-season]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const targetSeason = btn.getAttribute('data-season');
+            if (targetSeason === 'auto') {
+              localStorage.removeItem('cherry_season_override');
+            } else {
+              localStorage.setItem('cherry_season_override', targetSeason);
+            }
+            // Atalho Secreto: 5 toques rápidos no rodapé ativam/desativam o Modo Administrador
+  let footerTapCount = 0;
+  let footerTapTimer = null;
+  const footerBottomEl = document.querySelector('.footer-bottom');
+  if (footerBottomEl) {
+    footerBottomEl.style.cursor = 'pointer';
+    footerBottomEl.addEventListener('click', () => {
+      footerTapCount++;
+      clearTimeout(footerTapTimer);
+      footerTapTimer = setTimeout(() => { footerTapCount = 0; }, 1800);
+      if (footerTapCount >= 5) {
+        footerTapCount = 0;
+        const currentAdmin = localStorage.getItem('cherry_admin_mode') === 'true';
+        if (currentAdmin) {
+          localStorage.removeItem('cherry_admin_mode');
+          localStorage.removeItem('cherry_season_override');
+          document.body.classList.remove('admin-mode');
+          alert('Modo Administrador Desativado.\nO simulador foi ocultado e você está vendo o site exatamente como os clientes veem.');
+        } else {
+          localStorage.setItem('cherry_admin_mode', 'true');
+          document.body.classList.add('admin-mode');
+          alert('Modo Administrador Ativado!\nO Simulador de Temporadas agora está visível no banner da Galeria apenas para você.');
+        }
+        initSeasonalSystem();
+      }
+    });
+  }
+
+  initSeasonalSystem();
+          });
         });
-      });
+
+        const closeBtn = document.getElementById('btnCloseAdminSim');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            localStorage.removeItem('cherry_admin_mode');
+            localStorage.removeItem('cherry_season_override');
+            document.body.classList.remove('admin-mode');
+            initSeasonalSystem();
+          });
+        }
+      }
     }
 
     // ----------------------------------------------------

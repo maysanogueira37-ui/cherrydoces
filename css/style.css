@@ -3673,10 +3673,14 @@ button {
 
 /* Simulador / Testador de Temporadas (Discreto e Interativo) */
 .season-simulator-widget {
+  display: none !important;
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
-  display: flex;
+}
+
+body.admin-mode .season-simulator-widget {
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
