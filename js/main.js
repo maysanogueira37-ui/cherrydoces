@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button type="button" class="hero-seasonal-emblem-btn btn-view-photos" id="heroNatalGalleryLink">
                   🖼️ Ver Fotos de Natal (11 Fotos)
                 </button>
-                <a href="Cardápio de Natal.pdf" target="_blank" rel="noopener noreferrer" class="hero-seasonal-emblem-btn btn-view-cardapio" id="heroNatalPdfLink">
+                <a href="cardapio_natal.pdf" target="_blank" rel="noopener noreferrer" class="hero-seasonal-emblem-btn btn-view-cardapio" id="heroNatalPdfLink">
                   📖 Ver Cardápio (PDF) &rarr;
                 </a>
               </div>
@@ -617,9 +617,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button type="button" class="hero-seasonal-emblem-btn btn-view-photos" id="heroPascoaGalleryLink">
                   🖼️ Ver Fotos de Páscoa (24 Fotos)
                 </button>
-                <button type="button" class="hero-seasonal-emblem-btn btn-view-cardapio js-open-catalog" id="heroPascoaMenuLink">
-                  📖 Ver Cardápio de Páscoa &rarr;
-                </button>
+                <a href="cardapio_pascoa.pdf" target="_blank" rel="noopener noreferrer" class="hero-seasonal-emblem-btn btn-view-cardapio" id="heroPascoaPdfLink">
+                  📖 Ver Cardápio (PDF) &rarr;
+                </a>
               </div>
             </div>
           </div>
@@ -737,9 +737,9 @@ ${simulatorHtml}
               </div>
             </div>
             <div class="seasonal-banner-actions">
-              <button class="btn-seasonal-cta btn-primary js-open-catalog">
-                📖 Ver Cardápio de Páscoa
-              </button>
+              <a href="cardapio_pascoa.pdf" target="_blank" rel="noopener noreferrer" class="btn-seasonal-cta btn-primary" style="text-decoration: none;">
+                📖 Ver Cardápio de Páscoa (PDF)
+              </a>
               <button class="btn-seasonal-cta btn-outline" id="btnOpenPascoaGallery">
                 🖼️ Ver Fotos de Páscoa (24 Fotos)
               </button>
@@ -939,7 +939,7 @@ ${simulatorHtml}
                   <p class="catalog-seasonal-sub">Já estamos a aceitar encomendas para sobremesas de Natal e Réveillon! <strong>Aceitaremos até o dia 20/12!</strong></p>
                 </div>
               </div>
-              <a href="Cardápio de Natal.pdf" target="_blank" rel="noopener noreferrer" class="btn-seasonal-pdf">
+              <a href="cardapio_natal.pdf" target="_blank" rel="noopener noreferrer" class="btn-seasonal-pdf">
                 📄 Abrir Cardápio Oficial de Natal (PDF)
               </a>
             </div>
@@ -1003,6 +1003,9 @@ ${simulatorHtml}
                   <p class="catalog-seasonal-sub">Ovos de Colher artesanais e delícias recheadas. Encomendas com antecedência para garantir sua vaga!</p>
                 </div>
               </div>
+              <a href="cardapio_pascoa.pdf" target="_blank" rel="noopener noreferrer" class="btn-seasonal-pdf">
+                📄 Abrir Cardápio Oficial de Páscoa (PDF)
+              </a>
             </div>
 
             <div class="seasonal-items-list">
@@ -1190,21 +1193,21 @@ ${simulatorHtml}
       if (cardapioBadge) cardapioBadge.textContent = '🎄 Cardápio Especial de Natal';
       if (cardapioText) cardapioText.textContent = 'Bolos temáticos, tortas, bombom de travessa e pudim para sua ceia';
       if (cardapioPdfBtn) {
-        cardapioPdfBtn.href = 'Cardápio de Natal.pdf';
+        cardapioPdfBtn.href = 'cardapio_natal.pdf';
         cardapioPdfBtn.innerHTML = '<span>📄 Abrir Cardápio de Natal (PDF)</span>';
       }
     } else if (currentCategoryKey === 'pascoa_especial') {
       if (cardapioBadge) cardapioBadge.textContent = '🐰 Cardápio Especial de Páscoa';
       if (cardapioText) cardapioText.textContent = 'Ovos de colher artesanais super recheados e chocolates nobres';
       if (cardapioPdfBtn) {
-        cardapioPdfBtn.href = 'Cardápio Cherry Doces.pdf';
+        cardapioPdfBtn.href = 'cardapio_pascoa.pdf';
         cardapioPdfBtn.innerHTML = '<span>📄 Abrir Cardápio de Páscoa (PDF)</span>';
       }
     } else {
       if (cardapioBadge) cardapioBadge.textContent = `📖 Cardápio Oficial • ${cat.title}`;
       if (cardapioText) cardapioText.textContent = 'Confira tabela completa de sabores, recheios por kg e valores';
       if (cardapioPdfBtn) {
-        cardapioPdfBtn.href = 'Cardápio Cherry Doces.pdf';
+        cardapioPdfBtn.href = 'cardapio_cherry_doces.pdf';
         cardapioPdfBtn.innerHTML = '<span>📄 Abrir Cardápio (PDF)</span>';
       }
     }
