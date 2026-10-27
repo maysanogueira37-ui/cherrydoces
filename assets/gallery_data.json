@@ -1,0 +1,263 @@
+{
+  "naked_cake": {
+    "id": "naked_cake",
+    "title": "Naked Cake",
+    "tag": "Rústico & Frutas",
+    "cover": "naked_cake/naked_cake.png",
+    "desc": "Visual rústico sofisticado com massas fofinhas, recheios aparentes super fartos, morangos frescos e frutas vermelhas selecionadas.",
+    "badge": "Mais Pedido ♡",
+    "images": [
+      "naked_cake/naked_cake.png",
+      "naked_cake/1792714594058.jpg",
+      "naked_cake/1792714594124.jpg",
+      "naked_cake/1792714594173.jpg",
+      "naked_cake/1792714594218.jpg",
+      "naked_cake/1792714594349.jpg",
+      "naked_cake/1792714594625.jpg",
+      "naked_cake/1792714595073.jpg",
+      "naked_cake/1792714595225.jpg",
+      "naked_cake/1792714595249.jpg",
+      "naked_cake/1792714595299.jpg",
+      "naked_cake/1792714595322.jpg",
+      "naked_cake/1792714595422.jpg",
+      "naked_cake/1792714595494.jpg",
+      "naked_cake/1792714596234.jpg",
+      "naked_cake/bolo_morango.jpg"
+    ],
+    "count": 16
+  },
+  "bolo_tematico": {
+    "id": "bolo_tematico",
+    "title": "Bolos Temáticos & Infantis",
+    "tag": "Personagens & Festas",
+    "cover": "bolo_tematico/bolo_tematico.jpg",
+    "desc": "Criações personalizadas com toppers nobres, temas infantis, heróis, desenhos e decorações divertidas com chantininho de alta definição.",
+    "badge": "Personalizado",
+    "images": [
+      "bolo_tematico/bolo_tematico.jpg",
+      "bolo_tematico/1792714594148.jpg",
+      "bolo_tematico/1792714594459.jpg",
+      "bolo_tematico/1792714594509.jpg",
+      "bolo_tematico/1792714594652.jpg",
+      "bolo_tematico/1792714594706.jpg",
+      "bolo_tematico/1792714595049.jpg",
+      "bolo_tematico/1792714595173.jpg",
+      "bolo_tematico/1792714595472.jpg",
+      "bolo_tematico/1792714595679.jpg",
+      "bolo_tematico/1792714595700.jpg",
+      "bolo_tematico/1792714595780.jpg",
+      "bolo_tematico/1792714595914.jpg",
+      "bolo_tematico/1792714596198.jpg",
+      "bolo_tematico/1792714596216.jpg",
+      "bolo_tematico/1792714596569.jpg",
+      "bolo_tematico/IMG_20250902_150650.jpg",
+      "bolo_tematico/IMG_20251030_214355.jpg",
+      "bolo_tematico/IMG_20251129_121538.jpg",
+      "bolo_tematico/IMG_20251207_115335.jpg",
+      "bolo_tematico/IMG_20260419_135952.jpg",
+      "bolo_tematico/IMG_20260503_140656.jpg",
+      "bolo_tematico/IMG_20260625_151328.jpg"
+    ],
+    "count": 23
+  },
+  "bolo_coquette": {
+    "id": "bolo_coquette",
+    "title": "Bolo Estilo Coquette",
+    "tag": "Laços & Romantismo",
+    "cover": "bolo_coquette/bolo_coquette.jpg",
+    "desc": "Tendência delicada e ultra feminina com laços de cetim, pérolas comestíveis, tons pastéis e acabamento vintage com bicos especiais.",
+    "badge": "Tendência 2026",
+    "images": [
+      "bolo_coquette/bolo_coquette.jpg",
+      "bolo_coquette/1792714595349.jpg",
+      "bolo_coquette/IMG_20260509_182357.jpg"
+    ],
+    "count": 3
+  },
+  "bolo_elegante": {
+    "id": "bolo_elegante",
+    "title": "Bolos Elegantes & Bodas",
+    "tag": "Noivados & Comemorações",
+    "cover": "bolo_elegante/bolo_elegante.jpg",
+    "desc": "Elegância minimalista em chantininho aveludado, flores nobres, detalhes dourados e textura espatulada para momentos inesquecíveis.",
+    "badge": "Sofisticado",
+    "images": [
+      "bolo_elegante/bolo_elegante.jpg",
+      "bolo_elegante/1792714595073.jpg",
+      "bolo_elegante/1792714595556.jpg",
+      "bolo_elegante/1792714596388.jpg",
+      "bolo_elegante/IMG_20251026_160522.jpg",
+      "bolo_elegante/IMG_20251204_193619.jpg",
+      "bolo_elegante/IMG_20251225_195837.jpg",
+      "bolo_elegante/IMG_20260207_115033.jpg",
+      "bolo_elegante/IMG_20260313_174218.jpg",
+      "bolo_elegante/IMG_20260313_231923.jpg",
+      "bolo_elegante/IMG_20260419_140007.jpg"
+    ],
+    "count": 11
+  },
+  "bolo_corte": {
+    "id": "bolo_corte",
+    "title": "Bolos de Corte",
+    "tag": "Rendimento & Festas",
+    "cover": "bolo_corte/bolo_corte.png",
+    "desc": "Praticidade e generosidade em fatias uniformes. Massa molhadinha e recheios fartos para servir muitos convidados com elegância e economia.",
+    "badge": "Super Farto",
+    "images": [
+      "bolo_corte/bolo_corte.png",
+      "bolo_corte/1792714594240.jpg",
+      "bolo_corte/1792714594377.jpg",
+      "bolo_corte/1792714595023.jpg",
+      "bolo_corte/1792714595580.jpg",
+      "bolo_corte/1792714596036.jpg",
+      "bolo_corte/IMG_20250821_081402.jpg",
+      "bolo_corte/IMG_20260301_114050.jpg",
+      "bolo_corte/IMG_20260526_211347.jpg"
+    ],
+    "count": 9
+  },
+  "dec_simples": {
+    "id": "dec_simples",
+    "title": "Decoração Simples & Afetiva",
+    "tag": "Clássicos do Dia a Dia",
+    "cover": "dec_simples/dec_simples.jpg",
+    "desc": "Visual acolhedor com bicos artesanais de chantininho cremoso, granulados coloridos e muito sabor para celebrações íntimas e em família.",
+    "badge": "Artesanal",
+    "images": [
+      "dec_simples/dec_simples.jpg",
+      "dec_simples/1792714594599.jpg",
+      "dec_simples/1792714595273.jpg",
+      "dec_simples/1792714596051.jpg",
+      "dec_simples/1792714596180.jpg",
+      "dec_simples/1792714596427.jpg",
+      "dec_simples/1792714596505.jpg"
+    ],
+    "count": 7
+  },
+  "bento_cake": {
+    "id": "bento_cake",
+    "title": "Bentô Cake Tradicional",
+    "tag": "Memes & Mensagens",
+    "cover": "bento_cake/bento_cake.png",
+    "desc": "O clássico mini bolo com frases divertidas, desenhos cômicos ou mensagens afetivas para surpreender alguém especial em qualquer data.",
+    "badge": "Queridinho",
+    "images": [
+      "bento_cake/bento_cake.png",
+      "bento_cake/1792714594569.jpg",
+      "bento_cake/1792714595199.jpg",
+      "bento_cake/1792714595537.jpg",
+      "bento_cake/1792714595859.jpg",
+      "bento_cake/IMG_20251005_121630.jpg"
+    ],
+    "count": 6
+  },
+  "bento_marmitinha": {
+    "id": "bento_marmitinha",
+    "title": "Bentô na Marmitinha",
+    "tag": "Presenteável & Prático",
+    "cover": "bento_marmitinha/bento_marmitinha.jpg",
+    "desc": "Apresentação irresistível na marmitinha de isopor decorada, com garfinho de madeira e velinha inclusos. O mimo perfeito para presentear.",
+    "badge": "Mimo Perfeito",
+    "images": [
+      "bento_marmitinha/bento_marmitinha.jpg",
+      "bento_marmitinha/1792714595373.jpg",
+      "bento_marmitinha/1792714596001.jpg",
+      "bento_marmitinha/IMG_20251005_150304.jpg"
+    ],
+    "count": 4
+  },
+  "bolo_caseiro": {
+    "id": "bolo_caseiro",
+    "title": "Bolos Caseiros da Vovó",
+    "tag": "Café da Tarde",
+    "cover": "bolo_caseiro/bolo_caseiro.jpg",
+    "desc": "Receitas afetivas fofinhas com vulcão de chocolate, calda de laranja, goiabada ou fubá cremoso para deixar qualquer tarde mais especial.",
+    "badge": "Sabor de Casa",
+    "images": [
+      "bolo_caseiro/bolo_caseiro.jpg",
+      "bolo_caseiro/1792714594759.jpg",
+      "bolo_caseiro/1792714594924.jpg",
+      "bolo_caseiro/1792714594950.jpg",
+      "bolo_caseiro/1792714594974.jpg",
+      "bolo_caseiro/1792714596688.jpg",
+      "bolo_caseiro/1792714596746.jpg"
+    ],
+    "count": 7
+  },
+  "cento_doce": {
+    "id": "cento_doce",
+    "title": "Cento de Brigadeiros & Doces",
+    "tag": "Tradicionais & Gourmet",
+    "cover": "cento_doce/cento_doce.jpg",
+    "desc": "Brigadeiros tradicionais e gourmet boleados à mão com granulados nobres (ao leite, Ninho, beijinho, bicho de pé e paçoca) para a sua festa.",
+    "badge": "Festa Completa",
+    "images": [
+      "cento_doce/cento_doce.jpg",
+      "cento_doce/1792714594431.jpg",
+      "cento_doce/1792714594483.jpg",
+      "cento_doce/1792714595111.jpg",
+      "cento_doce/1792714595983.jpg",
+      "cento_doce/1792714596786.jpg",
+      "cento_doce/IMG_20260301_114558.jpg",
+      "cento_doce/IMG_20260312_205111.jpg"
+    ],
+    "count": 8
+  },
+  "natal_especial": {
+    "id": "natal_especial",
+    "title": "Especial de Natal & Festas",
+    "tag": "Edição Limitada de Fim de Ano 🎄",
+    "cover": "natal/logo_natal.jpg",
+    "desc": "Delícias especiais para a ceia de Natal e Réveillon: Bolos decorados, bombons de travessa, pudins e tortas artesanais para celebrar com a família.",
+    "badge": "Edição de Natal 🎄",
+    "images": [
+      "natal/Gemini_Generated_Image_8j96qo8j96qo8j96.jpg",
+      "natal/IMG_20251121_172131.jpg",
+      "natal/IMG_20251122_162656.jpg",
+      "natal/IMG_20251205_072206.jpg",
+      "natal/Sobremesas Cremosas com Chocolate e Calda Dourada.png",
+      "natal/bolo de limão.png",
+      "natal/bolo natalino.png",
+      "natal/bombom de travessa.png",
+      "natal/natal_inicial.jpg",
+      "natal/pudim.png",
+      "natal/torta de limao.jpg"
+    ],
+    "count": 11
+  },
+  "pascoa_especial": {
+    "id": "pascoa_especial",
+    "title": "Especial de Páscoa",
+    "tag": "Ovos de Colher & Chocolates 🐰",
+    "cover": "pascoa/logo_pascoa.jpg",
+    "desc": "Criações pascoais artesanais: Ovos de colher super recheados em caixas presenteáveis, ovos trufados e muito chocolate nobre feito sob encomenda.",
+    "badge": "Edição Páscoa 🐰",
+    "images": [
+      "pascoa/IMG_20260401_215021.jpg",
+      "pascoa/IMG_20260403_133437.jpg",
+      "pascoa/IMG_20260403_133501.jpg",
+      "pascoa/IMG_20260403_133723.jpg",
+      "pascoa/IMG_20260403_140421.jpg",
+      "pascoa/IMG_20260403_140447.jpg",
+      "pascoa/IMG_20260404_122623.jpg",
+      "pascoa/IMG_20260404_122627.jpg",
+      "pascoa/IMG_20260404_144916.jpg",
+      "pascoa/IMG_20260404_160704.jpg",
+      "pascoa/IMG_20260404_162312.jpg",
+      "pascoa/IMG_20260404_195912.jpg",
+      "pascoa/IMG_20260404_214043.jpg",
+      "pascoa/IMG_20260405_000719.jpg",
+      "pascoa/IMG_20260405_121421.jpg",
+      "pascoa/IMG_20260405_122003.jpg",
+      "pascoa/IMG_20260510_164107.jpg",
+      "pascoa/IMG_20260510_164153.jpg",
+      "pascoa/IMG_20260531_160522.jpg",
+      "pascoa/Screenshot_2026-03-11-15-43-28-177_com.google.android.apps.photos.jpg",
+      "pascoa/Screenshot_2026-03-11-15-47-21-126_com.google.android.apps.photos.jpg",
+      "pascoa/WhatsApp Image 2026-10-23 at 11.34.17.jpeg",
+      "pascoa/WhatsApp Image 2026-10-23 at 11.34.23.jpeg",
+      "pascoa/pascoa_inicial.jpg"
+    ],
+    "count": 24
+  }
+}

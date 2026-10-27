@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cherry Doces por Lorrany em Carapicuíba - Bolos artesanais, brigadeiros gourmet, doces finos e kits festas feitos com muito amor. Faça sua encomenda pelo WhatsApp!">
+  <meta name="keywords" content="Cherry Doces, Lorrany confeiteira, bolos artesanais Carapicuíba, brigadeiros gourmet, confeitaria Carapicuíba, bolo festa, doces artesanais">
+  <meta name="author" content="Cherry Doces">
+  <title>Cherry Doces | Confeitaria Artesanal por Lorrany</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Prevenir rolagem automática para o rodapé ao carregar ou atualizar a página -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Decoração Ambiental Sazonal (Flocos de Neve no Natal / Elementos de Páscoa) -->
+  <div id="seasonalAmbientDecor" class="seasonal-ambient-decor" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Cabeçalho (Header)
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <!-- Faixa Festiva Superior Sazonal (Natal / Páscoa) -->
+    <div id="seasonalTopRibbon" class="seasonal-top-ribbon"></div>
+    <div class="container header-container">
+      <!-- Logotipo à Esquerda (Troca automaticamente para logo_natal ou logo_pascoa) -->
+      <a href="#inicio" class="brand-link" aria-label="Cherry Doces - Início">
+        <img src="logo-badge.png" alt="Logotipo Cherry Doces" class="brand-logo-img" id="headerBrandLogo">
+        <div class="brand-text">
+          <span class="brand-title">Cherry Doces</span>
+          <span class="brand-subtitle" id="headerBrandSubtitle">Doces Artesanais</span>
+        </div>
+      </a>
+
+      <!-- Links Rápidos de Navegação à Direita -->
+      <nav aria-label="Navegação principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre-mim" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#cardapio" class="nav-link js-open-catalog">Cardápio</a></li>
+          <li><a href="#prazos-entregas" class="nav-link">Prazos &amp; Entregas</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA de Ação Rápida no Topo -->
+      <div class="header-cta-group">
+        <a href="https://wa.me/5511985751371?text=Ol%C3%A1%2C%20Lorrany!%20Vim%20pelo%20site%20da%20Cherry%20Doces%20e%20gostaria%20de%20fazer%20uma%20encomenda." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-header-whatsapp"
+           aria-label="Pedir pelo WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 2.05.814 3.19.814 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.81-1.24l-5.19 1.36 1.39-5.06c-.88-1.48-1.39-3.21-1.39-5.06 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+          </svg>
+          <span>Encomendar</span>
+        </a>
+
+        <!-- Botão Toggle Mobile -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Seção de Boas-Vindas (Hero / Primeira Página)
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Conteúdo da Esquerda -->
+          <div class="hero-content">
+            <div class="hero-greeting-pill" id="heroGreetingPill">
+              <span>🍰</span> Confeitaria 100% Artesanal &amp; Afetiva
+            </div>
+            <!-- Card Emblema Sazonal com logo_natal / logo_pascoa em Destaque -->
+            <div id="heroSeasonalLogoMount" class="hero-seasonal-logo-mount"></div>
+
+            <h1 class="hero-title">
+              Bolos e doces que transformam sua festa em&nbsp;um <span class="name-highlight">momento inesquecível&nbsp;<span class="heart-deco">♡</span></span>
+            </h1>
+
+            <p class="hero-subtitle" id="heroSubtitle">
+              Produção exclusiva e fresquinha em Carapicuíba. Ingredientes nobres, recheios fartos e muito carinho em cada detalhe para adoçar suas celebrações.
+            </p>
+
+            <div class="hero-actions">
+              <!-- Botão de Ação Primária -->
+              <a href="https://wa.me/5511985751371?text=Ol%C3%A1%2C%20Lorrany!%20Vim%20pelo%20site%20da%20Cherry%20Doces%20e%20gostaria%20de%20fazer%20uma%20encomenda." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-primary-whatsapp"
+                 id="heroWhatsAppBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 2.05.814 3.19.814 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.81-1.24l-5.19 1.36 1.39-5.06c-.88-1.48-1.39-3.21-1.39-5.06 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+                </svg>
+                <span>Fazer Encomenda (WhatsApp)</span>
+              </a>
+
+              <!-- Botão Secundário para Cardápio -->
+              <button class="btn-secondary-menu js-open-catalog" id="cardapio-btn">
+                <span>📖</span> Ver Cardápio Online
+              </button>
+            </div>
+
+            <!-- Destaques Rápidos -->
+            <div class="hero-badges-row">
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">👩‍🍳</div>
+                <div class="hero-badge-text">
+                  <span class="hero-badge-title">+6 Anos</span>
+                  <span class="hero-badge-desc">De Experiência</span>
+                </div>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">📍</div>
+                <div class="hero-badge-text">
+                  <span class="hero-badge-title">Carapicuíba</span>
+                  <span class="hero-badge-desc">Entrega &amp; Retirada</span>
+                </div>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">🍓</div>
+                <div class="hero-badge-text">
+                  <span class="hero-badge-title">100% Fresquinho</span>
+                  <span class="hero-badge-desc">Feito sob medida</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagem de Destaque: Bolo Artesanal Festivo -->
+          <div class="hero-visual">
+            <div class="hero-card-frame">
+              <img src="assets/products/bolo_inicial_fotografico.jpg" 
+                   alt="Bolo Artesanal de Morangos com Laço Vermelho - Cherry Doces" 
+                   class="hero-photo-img" 
+                   id="heroPhotoImg"
+                   loading="eager">
+              
+              <!-- Selo Flutuante Topo -->
+              <div class="hero-floating-badge-top" id="heroFloatingBadgeTop">
+                <span>🍓</span> Morangos Frescos
+              </div>
+
+              <!-- Medalhão Sazonal Flutuante na Foto Hero -->
+              <div id="heroFrameSeasonalLogo" class="hero-frame-seasonal-logo"></div>
+
+              <!-- Selo Flutuante Base -->
+              <div class="hero-floating-seal" id="heroFloatingSeal">
+                <div class="seal-icon" id="heroSealIcon">🎂</div>
+                <div>
+                  <div class="seal-title" id="heroSealTitle">Bolo Festa Morango</div>
+                  <div class="seal-subtitle" id="heroSealSubtitle">Criação Artesanal Cherry Doces ♡</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Seção "Sobre Mim" (Conheça a Confeiteira Lorrany)
+         ========================================================================== -->
+    <section class="about-section" id="sobre-mim">
+      <div class="container">
+        <!-- Grid Especial da Lorrany com foto_lorrany.jpg -->
+        <div class="about-lorrany-grid">
+          <!-- Foto da Lorrany -->
+          <div class="about-lorrany-visual">
+            <div class="about-lorrany-photo-frame">
+              <img src="foto_lorrany.jpg" 
+                   alt="Lorrany, confeiteira e fundadora da Cherry Doces" 
+                   class="about-lorrany-img" 
+                   loading="lazy">
+              
+              <div class="hero-floating-badge-top badge-top-left">
+                <span>👩‍🍳</span> Confeiteira Oficial
+              </div>
+
+              <div class="hero-floating-seal">
+                <div class="seal-icon">🧁</div>
+                <div>
+                  <div class="seal-title">Lorrany Romeu</div>
+                  <div class="seal-subtitle">Cherry Doces • Carapicuíba ♡</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Informações da Lorrany -->
+          <div class="about-lorrany-content">
+            <div class="hero-greeting-pill" style="margin-bottom: 1rem;">
+              <span>♡</span> Conheça a Confeiteira
+            </div>
+
+            <h2 class="about-lorrany-title">
+              Olá, eu sou a <span class="name-highlight">Lorrany <span class="heart-deco">♡</span></span>
+            </h2>
+
+            <p class="about-lorrany-subtitle">
+              Sou confeiteira há mais de <strong>6 anos</strong> e trabalho com <strong>bolos e doces artesanais</strong> em Carapicuíba. Cada receita é preparada com ingredientes selecionados, cuidado e muito carinho para adoçar seus momentos especiais!
+            </p>
+
+            <div class="about-quick-bullets">
+              <span class="about-bullet-item">🎂 Tenho 26 anos ♡</span>
+              <span class="about-bullet-item">📍 Moro na região de Carapicuíba ♡</span>
+              <span class="about-bullet-item">👩‍🍳 Mais de 6 anos de confeitaria</span>
+            </div>
+
+            <!-- Card Humanizado com Mensagem da Lorrany -->
+            <div class="about-highlight-card" style="margin-bottom: 1.8rem; padding: 1.8rem 2rem; width: 100%;">
+              <span class="about-quote-mark" aria-hidden="true">“</span>
+              <div>
+                <p class="about-quote-text">
+                  Tudo é feito com muito cuidado, carinho e dedicação, para que eu possa entregar o melhor para você! ♡ Seu pedido é muito importante para mim!
+                </p>
+                <div class="about-quote-author">
+                  <span>— Lorrany</span>
+                  <span class="badge badge-pink">Confeiteira Artesanal</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://wa.me/5511985751371?text=Ol%C3%A1%20Lorrany!%20Vim%20pela%20se%C3%A7%C3%A3o%20Sobre%20Mim%20e%20gostaria%20de%20fazer%20uma%20encomenda%20com%20voc%C3%AA%20%E2%99%A1" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-primary-whatsapp" 
+                 style="font-size: 0.95rem; padding: 0.8rem 1.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 2.05.814 3.19.814 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.81-1.24l-5.19 1.36 1.39-5.06c-.88-1.48-1.39-3.21-1.39-5.06 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+                </svg>
+                <span>Falar com a Lorrany (WhatsApp)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Ícones Visuais de Diferenciais -->
+        <div class="differentials-grid">
+          <div class="diff-card">
+            <div class="diff-icon-wrapper" style="color: #36a4a7;">
+              🎂
+            </div>
+            <h3 class="diff-title">Bolos Artesanais</h3>
+            <p class="diff-desc">Massas fofinhas, molhadinhas na medida certa e recheios fartos que combinam cremosidade e equilíbrio.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon-wrapper" style="color: #d86884;">
+              🍫
+            </div>
+            <h3 class="diff-title">Doces Artesanais</h3>
+            <p class="diff-desc">Brigadeiros tradicionais e gourmet boleados à mão com granulados nobres e sabores irresistíveis.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon-wrapper" style="color: #462820;">
+              ✨
+            </div>
+            <h3 class="diff-title">Sabor &amp; Qualidade</h3>
+            <p class="diff-desc">Ingredientes de primeira linha, chocolate autêntico e frutas frescas sem aditivos artificiais.</p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon-wrapper" style="color: #c92a3a;">
+              💖
+            </div>
+            <h3 class="diff-title">Feito com Amor</h3>
+            <p class="diff-desc">Atenção minuciosa desde o primeiro atendimento pelo WhatsApp até a entrega perfeita na sua mesa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Galeria de Produtos ("Nossos Doces e Bolos")
+         ========================================================================== -->
+        <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Galeria</span>
+          <h2 class="section-title">Galeria de Doces e Bolos</h2>
+          <p class="section-description">
+            Inspire-se com nossos modelos e criações exclusivas. Clique em qualquer tema para abrir o álbum completo de fotos com zoom e encomendar o seu favorito!
+          </p>
+        </div>
+
+        <!-- Banner Automatizado de Temporada Sazonal (Injetado via JS) -->
+        <div id="seasonalBannerMount"></div>
+
+        <!-- Filtros Visuais Rápidos -->
+        <div class="gallery-filters" role="tablist" id="galleryFilters">
+          <button class="filter-btn active" data-filter="all">Todos os Temas (10)</button>
+          <button class="filter-btn" data-filter="festivos">Bolos Decorados</button>
+          <button class="filter-btn" data-filter="bento">Bentô Cakes</button>
+          <button class="filter-btn" data-filter="caseiros">Corte &amp; Caseiros</button>
+          <button class="filter-btn" data-filter="doces">Brigadeiros &amp; Doces</button>
+        </div>
+
+        <!-- Grade de Categorias com Capas Oficiais e Descrições -->
+        <div class="category-cards-grid" id="categoryGrid">
+
+          <!-- 1. Naked Cake -->
+          <article class="category-card" data-category="naked_cake" data-filter-group="festivos">
+            <div class="category-card-thumb">
+              <img src="naked_cake/naked_cake.png" alt="Naked Cake Confeitaria Artesanal Cherry Doces" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Rústico Chic</span>
+              <span class="category-count-badge">📷 16 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Naked Cake</h3>
+              <p class="category-card-desc">
+                Visual rústico sofisticado com massas fofinhas, recheios aparentes super fartos, morangos frescos e frutas vermelhas selecionadas.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Naked Cake">
+                <span>Ver Álbum (16 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. Bolo Temático -->
+          <article class="category-card" data-category="bolo_tematico" data-filter-group="festivos">
+            <div class="category-card-thumb">
+              <img src="bolo_tematico/bolo_tematico.jpg" alt="Bolos Temáticos e Infantis Cherry Doces" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Personagens &amp; Toppers</span>
+              <span class="category-count-badge">📷 23 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bolos Temáticos &amp; Infantis</h3>
+              <p class="category-card-desc">
+                Criações personalizadas com toppers nobres, temas infantis, heróis, desenhos e decorações festivas que encantam todas as idades.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bolos Temáticos">
+                <span>Ver Álbum (23 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Bolo Coquette -->
+          <article class="category-card" data-category="bolo_coquette" data-filter-group="festivos">
+            <div class="category-card-thumb">
+              <img src="bolo_coquette/bolo_coquette.jpg" alt="Bolo Estilo Coquette com Laços de Cetim" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Tendência Romântica</span>
+              <span class="category-count-badge">📷 3 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bolo Estilo Coquette</h3>
+              <p class="category-card-desc">
+                A estética mais delicada e romântica da confeitaria atual com laços de cetim, mini pérolas comestíveis e acabamento vintage em tons pastéis.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bolo Coquette">
+                <span>Ver Álbum (3 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Bolo Elegante -->
+          <article class="category-card" data-category="bolo_elegante" data-filter-group="festivos">
+            <div class="category-card-thumb">
+              <img src="bolo_elegante/bolo_elegante.jpg" alt="Bolos Elegantes para Noivados e Bodas" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Noivados &amp; 15 Anos</span>
+              <span class="category-count-badge">📷 11 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bolos Elegantes &amp; Bodas</h3>
+              <p class="category-card-desc">
+                Decorações refinadas para noivados, casamentos e aniversários marcantes com flores, texturas finas e detalhes dourados.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bolos Elegantes">
+                <span>Ver Álbum (11 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Bolo de Corte -->
+          <article class="category-card" data-category="bolo_corte" data-filter-group="caseiros">
+            <div class="category-card-thumb">
+              <img src="bolo_corte/bolo_corte.png" alt="Bolos de Corte Retangulares Fartos" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Praticidade &amp; Rendimento</span>
+              <span class="category-count-badge">📷 9 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bolos de Corte</h3>
+              <p class="category-card-desc">
+                Bolos retangulares fartamente recheados e estruturados, pensados para fatiar com rapidez e servir muitos convidados com sabor inesquecível.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bolos de Corte">
+                <span>Ver Álbum (9 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. Decoração Simples -->
+          <article class="category-card" data-category="dec_simples" data-filter-group="festivos">
+            <div class="category-card-thumb">
+              <img src="dec_simples/dec_simples.jpg" alt="Decoração Simples e Afetiva em Chantininho" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Clássicos do Dia a Dia</span>
+              <span class="category-count-badge">📷 7 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Decoração Simples &amp; Afetiva</h3>
+              <p class="category-card-desc">
+                Visual acolhedor com bicos artesanais de chantininho cremoso, granulados coloridos e textura aveludada perfeita para celebrações familiares.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Decoração Simples">
+                <span>Ver Álbum (7 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. Bentô Cake -->
+          <article class="category-card" data-category="bento_cake" data-filter-group="bento">
+            <div class="category-card-thumb">
+              <img src="bento_cake/bento_cake.png" alt="Bentô Cake com Frases e Desenhos Engraçados" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Memes &amp; Afeto</span>
+              <span class="category-count-badge">📷 6 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bentô Cake Tradicional</h3>
+              <p class="category-card-desc">
+                O queridinho da internet: mini bolos individuais com frases divertidas, memes ou declarações carinhosas para presentear de forma única.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bentô Cake">
+                <span>Ver Álbum (6 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 8. Bentô na Marmitinha -->
+          <article class="category-card" data-category="bento_marmitinha" data-filter-group="bento">
+            <div class="category-card-thumb">
+              <img src="bento_marmitinha/bento_marmitinha.jpg" alt="Bentô Cake na Marmitinha Presenteável" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Kit Mimo com Garfinho</span>
+              <span class="category-count-badge">📷 4 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bentô na Marmitinha</h3>
+              <p class="category-card-desc">
+                Apresentação charmosa e prática na embalagem individual decorada com laço, acompanha velinha e garfinho de madeira para comemorar onde estiver.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bentô na Marmitinha">
+                <span>Ver Álbum (4 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 9. Bolos Caseiros -->
+          <article class="category-card" data-category="bolo_caseiro" data-filter-group="caseiros">
+            <div class="category-card-thumb">
+              <img src="bolo_caseiro/bolo_caseiro.jpg" alt="Bolos Caseiros Artesanais da Vovó" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Café da Tarde</span>
+              <span class="category-count-badge">📷 7 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bolos Caseiros da Vovó</h3>
+              <p class="category-card-desc">
+                Receitas afetivas que acolhem o coração: cenoura com vulcão de chocolate, laranja com calda fresca, milho cremoso e fubá com goiabada.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Bolos Caseiros">
+                <span>Ver Álbum (7 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- 10. Cento de Doces -->
+          <article class="category-card" data-category="cento_doce" data-filter-group="doces">
+            <div class="category-card-thumb">
+              <img src="cento_doce/cento_doce.jpg" alt="Cento de Doces e Brigadeiros Gourmet para Festas" class="category-card-img" loading="lazy">
+              <span class="category-tag-badge">Festa Completa</span>
+              <span class="category-count-badge">📷 8 Fotos</span>
+              <div class="category-overlay-hint">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span>Ver Álbum Completo</span>
+              </div>
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Cento de Doces &amp; Brigadeiros</h3>
+              <p class="category-card-desc">
+                Brigadeiros tradicionais e gourmet boleados à mão com granulados nobres (ao leite, Ninho, bicho de pé, beijinho e churros) fresquinhos para sua festa.
+              </p>
+              <button type="button" class="btn-open-category" aria-label="Abrir álbum de Cento de Doces">
+                <span>Ver Álbum (8 Fotos)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Botão em Destaque Abaixo da Galeria: Abre Janela Flutuante do Cardápio -->
+        <div class="gallery-cta-container">
+          <button type="button" class="btn-catalog-large js-open-catalog" aria-label="Abrir Janela do Cardápio Completo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Ver Cardápio Completo &amp; Tabela de Preços</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Seção Prazos de Antecedência e Política de Entregas (Logística)
+         ========================================================================== -->
+    <section class="logistics-section" id="prazos-entregas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Atendimento & Logística</span>
+          <h2 class="section-title">Prazos de Antecedência e Política de Entrega</h2>
+          <p class="section-description">
+            Entenda como funciona o preparo cuidadoso da confeiteira Lorrany e as formas práticas para receber seus doces e bolos fresquinhos.
+          </p>
+        </div>
+
+        <div class="logistics-grid">
+          <!-- Card 1: Política de Antecedência (Flyer Prazo) -->
+          <div class="logistics-card prazo-card">
+            <div class="card-header-badge-row">
+              <span class="badge badge-pink">⏰ Regras de Antecedência</span>
+              <span class="handwritten" style="font-size: 1.15rem;">Feito com Amor ♡</span>
+            </div>
+
+            <h3 class="card-main-title">Prazos de Produção & Antecedência</h3>
+            <p class="card-intro-text">
+              Para assegurar o frescor artesanal, o descanso correto dos recheios e a máxima perfeição em cada detalhe, organizamos os prazos de acordo com o porte da encomenda:
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+              <!-- Destaque 1: Encomendas Grandes de Festa -->
+              <div style="background: rgba(240, 142, 168, 0.12); border-left: 4px solid var(--color-pink); border-radius: var(--radius-sm); padding: 1.15rem 1.25rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="font-size: 1.35rem;">🎉</span>
+                    <strong style="color: var(--color-brown); font-size: 1.05rem;">Festas & Encomendas Grandes com Docinhos</strong>
+                  </div>
+                  <span class="badge badge-pink" style="font-size: 0.78rem; padding: 0.25rem 0.7rem; font-weight: 700;">Mínimo 1 Semana</span>
+                </div>
+                <p style="margin: 0; font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55;">
+                  Para <strong>festas completas, centos de brigadeiros, doces artesanais ou grandes celebrações</strong>, o pedido deve ser feito com <strong>no mínimo uma semana de antecedência</strong>. Esse prazo é indispensável para o planejamento dos insumos nobres, produção em lote e reserva de data exclusiva na agenda da Lorrany.
+                </p>
+              </div>
+
+              <!-- Destaque 2: Bolos Simples -->
+              <div style="background: rgba(54, 164, 167, 0.1); border-left: 4px solid var(--color-tiffany); border-radius: var(--radius-sm); padding: 1.15rem 1.25rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="font-size: 1.35rem;">🎂</span>
+                    <strong style="color: var(--color-brown); font-size: 1.05rem;">Bolos Simples</strong>
+                  </div>
+                  <span class="badge badge-tiffany" style="font-size: 0.78rem; padding: 0.25rem 0.7rem; font-weight: 700;">Mínimo 2 Dias</span>
+                </div>
+                <p style="margin: 0; font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.55;">
+                  O aviso de <strong>2 dias de antecedência é válido exclusivamente para bolos simples</strong>. Esse tempo é rigorosamente necessário para o descanso de <strong>pelo menos 12 horas na geladeira</strong>, proporcionando estrutura firme, estabilidade no corte e textura aveludada.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-flow">
+              <div class="timeline-step">
+                <span class="timeline-dot">1</span>
+                <div class="timeline-step-title">
+                  <span>Preparo das Bases</span>
+                  <span class="badge-highlight">Massas & Recheios</span>
+                </div>
+                <p class="timeline-step-desc">
+                  Preparo minucioso da massa artesanal fofinha e dos recheios no ponto perfeito, com todo o cuidado e atenção dedicados a cada detalhe.
+                </p>
+              </div>
+
+              <div class="timeline-step">
+                <span class="timeline-dot">2</span>
+                <div class="timeline-step-title">
+                  <span>Descanso Estrutural</span>
+                  <span class="badge-highlight">Descanso de 12 horas</span>
+                </div>
+                <p class="timeline-step-desc">
+                  O bolo precisa descansar <strong>pelo menos 12 horas na geladeira</strong> para ganhar estrutura firme, estabilidade e atingir uma textura cremosa e irresistível.
+                </p>
+              </div>
+
+              <div class="timeline-step">
+                <span class="timeline-dot">✨</span>
+                <div class="timeline-step-title">
+                  <span>Finalização & Decoração</span>
+                  <span class="badge-highlight">Decoração & Entrega</span>
+                </div>
+                <p class="timeline-step-desc">
+                  Aplicação da cobertura, frutas frescas e docinhos no topo, finalizando com embalagem especial para a entrega do seu pedido!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Política de Entregas & Logística -->
+          <div class="logistics-card delivery-card">
+            <div class="card-header-badge-row">
+              <span class="badge badge-tiffany">📍 Base em Carapicuíba - SP</span>
+              <span class="badge" style="background: rgba(70, 40, 32, 0.06); color: var(--color-brown); font-weight: 700;">Flexibilidade Total</span>
+            </div>
+
+            <h3 class="card-main-title">Política de Entregas e Retirada</h3>
+            <p class="card-intro-text">
+              Nossa produção é 100% artesanal e baseada na região de <strong>Carapicuíba</strong>. Para facilitar ao máximo o seu atendimento, operamos com formatos adaptáveis:
+            </p>
+
+            <div class="delivery-features-list">
+              <div class="delivery-feature-item">
+                <div class="delivery-feature-icon">🗺️</div>
+                <div class="delivery-feature-body">
+                  <h4>Área de Entrega Flexível</h4>
+                  <p>A área exata e viabilidade da entrega são flexíveis e <strong>negociadas caso a caso</strong> diretamente pelo WhatsApp, alinhando horário e local de acordo com a sua comemoração.</p>
+                </div>
+              </div>
+
+              <div class="delivery-feature-item">
+                <div class="delivery-feature-icon">🚗</div>
+                <div class="delivery-feature-body">
+                  <h4>Envios por Aplicativo (Uber Flash / Envios)</h4>
+                  <p>É <strong>totalmente permitido</strong> o envio de serviços de aplicativo (como <strong>Uber Flash</strong>, <strong>Uber Envios</strong> ou <strong>99 Entrega</strong>) por conta do cliente. Entregamos a caixa reforçada e lacrada em mãos para o motorista no horário combinado!</p>
+                </div>
+              </div>
+
+              <div class="delivery-feature-item">
+                <div class="delivery-feature-icon">🛍️</div>
+                <div class="delivery-feature-body">
+                  <h4>Retirada no Local sem Frete</h4>
+                  <p>Preferindo retirar pessoalmente, você pode agendar o horário com a Lorrany em nosso ponto de atendimento em Carapicuíba, com total segurança e pontualidade.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destaque Informativo -->
+            <div class="app-delivery-highlight">
+              <div class="app-delivery-icon-badge">📱</div>
+              <div class="app-delivery-text">
+                <h5>Como cotar seu frete?</h5>
+                <p>Basta nos chamar no WhatsApp informando o seu CEP/bairro para alinharmos a melhor forma de envio ou combinarmos o Uber Flash!</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="https://wa.me/5511985751371?text=Ol%C3%A1%20Lorrany!%20Gostaria%20de%20combinar%20a%20entrega%20ou%20retirada%20de%20um%20pedido%20com%20voc%C3%AA." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="btn-primary-whatsapp" 
+                 style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.85rem 1.5rem;">
+                Combinar Entrega no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Como Fazer sua Encomenda (Passo a Passo)
+         ========================================================================== -->
+    <section class="how-it-works-section">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Simples & Rápido</span>
+          <h2 class="section-title">Como encomendar suas delícias</h2>
+          <p class="section-description">
+            Cuidamos de cada etapa para que a sua festa tenha o sabor que você sempre sonhou.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Escolha os Sabores</h3>
+            <p class="step-desc">Navegue pelas nossas opções de bolos, brigadeiros e docinhos artesanais.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Reserve com Antecedência</h3>
+            <p class="step-desc">Mínimo de 1 semana para festas e encomendas grandes com docinhos, ou 2 dias para bolos simples.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Combine Entrega ou Retirada</h3>
+            <p class="step-desc">Definimos a entrega flexível, envio por Uber Flash por conta do cliente ou retirada em Carapicuíba.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Celebre com Amor</h3>
+            <p class="step-desc">Receba seu bolo bem estruturado (após as 12h de descanso) e encante todos os seus convidados!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Rodapé e Chamadas para Ação (Footer)
+       ========================================================================== -->
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <!-- Slogan em Destaque -->
+      <div class="footer-slogan-banner">
+        <p class="footer-slogan-text">
+          “Confeitaria é mais do que doces, é amor em forma de sabor! <span class="footer-slogan-heart">♡</span>”
+        </p>
+        <span class="footer-slogan-sub">Feito à mão especialmente para o seu momento</span>
+      </div>
+
+      <div class="footer-grid">
+        <!-- Coluna 1: Logotipo no Rodapé & Apresentação -->
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="logo-badge.png" alt="Logotipo Cherry Doces Rodapé" class="footer-logo-img" id="footerBrandLogo">
+            <div>
+              <h3 class="footer-brand-title">Cherry Doces</h3>
+              <span class="footer-brand-badge" id="footerBrandBadge">Doces Artesanais</span>
+            </div>
+          </div>
+          <p class="footer-bio">
+            Fundada pela confeiteira Lorrany, a Cherry Doces leva amor, afeto e os melhores sabores artesanais para festas e momentos especiais em Carapicuíba e região.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Informações Visíveis de Contato -->
+        <div>
+          <h4 class="footer-col-title">Informações de Contato</h4>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <div class="contact-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 2.05.814 3.19.814 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.81-1.24l-5.19 1.36 1.39-5.06c-.88-1.48-1.39-3.21-1.39-5.06 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp:</strong><br>
+                <a href="https://wa.me/5511985751371" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  (11) 98575-1371
+                </a>
+              </div>
+            </li>
+
+            <li class="contact-info-item">
+              <div class="contact-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Instagram:</strong><br>
+                <a href="https://www.instagram.com/CherryDoces1" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  @CherryDoces1
+                </a>
+              </div>
+            </li>
+
+            <li class="contact-info-item">
+              <div class="contact-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Região de Atendimento:</strong><br>
+                <span>Carapicuíba - SP e proximidades</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Botões Funcionais Destacados -->
+        <div>
+          <h4 class="footer-col-title">Acesso Rápido</h4>
+          <div class="footer-action-buttons">
+            <!-- Botão 1: Chamar no WhatsApp -->
+            <a href="https://wa.me/5511985751371?text=Ol%C3%A1%2C%20Lorrany!%20Vim%20pelo%20site%20da%20Cherry%20Doces%20e%20gostaria%20de%20fazer%20um%20pedido." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-footer-action btn-footer-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 2.05.814 3.19.814 3.182 0 5.768-2.586 5.769-5.766 0-3.18-2.587-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.745 0-3.38-.45-4.81-1.24l-5.19 1.36 1.39-5.06c-.88-1.48-1.39-3.21-1.39-5.06 0-5.518 4.482-10 10-10 5.518 0 10 4.482 10 10z"/>
+              </svg>
+              <span>Chamar no WhatsApp</span>
+            </a>
+
+            <!-- Botão 2: Instagram -->
+            <a href="https://www.instagram.com/CherryDoces1" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-footer-action btn-footer-instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>Instagram @CherryDoces1</span>
+            </a>
+
+            <!-- Botão 3: Abrir Cardápio -->
+            <button class="btn-footer-action btn-footer-catalog js-open-catalog">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Abrir Cardápio Completo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodapé Inferior -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Cherry Doces por Lorrany. Todos os direitos reservados.
+        </div>
+        <div>
+          Feito com carinho para adoçar seus dias ♡
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modal: Cardápio Completo / Catálogo Online
+       ========================================================================== -->
+  <div class="modal-backdrop" id="catalogModal" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title" id="catalogModalTitle">📖 Cardápio Completo da Cherry Doces</h3>
+        <button type="button" class="modal-close-btn" id="closeCatalogBtn" aria-label="Fechar cardápio">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Ponto de Injeção: Cardápio Sazonal Dinâmico (Natal / Páscoa / Aviso Em Breve) -->
+        <div id="catalogSeasonalMount"></div>
+
+        <!-- Banner para Download do PDF -->
+        <div style="background: linear-gradient(135deg, var(--color-tiffany-soft) 0%, #ffffff 100%); border: 2px dashed var(--color-tiffany); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.9rem;">
+            <span style="font-size: 2.2rem; line-height: 1;">📄</span>
+            <div>
+              <strong style="color: var(--color-brown); font-size: 1.05rem; display: block;">Cardápio Oficial da Confeiteira Lorrany (PDF)</strong>
+              <span style="color: var(--color-text-muted); font-size: 0.85rem;">Baixe o arquivo original com todos os sabores e tabelas completas</span>
+            </div>
+          </div>
+          <a href="Cardápio Cherry Doces.pdf" target="_blank" rel="noopener noreferrer" class="btn-pdf-download" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Abrir Cardápio (PDF)
+          </a>
+        </div>
+
+        <!-- Aviso de Antecedência e Logística -->
+        <div class="catalog-notice-banner" style="margin-bottom: 2rem;">
+          <span class="catalog-notice-icon">⏰</span>
+          <div class="catalog-notice-text">
+            <strong>Regras de Antecedência:</strong> Encomendas grandes para festas com docinhos precisam de <strong>no mínimo 1 semana</strong> de antecedência. O prazo de <strong>2 dias</strong> é válido somente para <strong>bolos simples</strong> (com descanso obrigatório de 12 horas refrigerado). Pedidos confirmados <strong>mediante 30% do pagamento</strong>. Entregas flexíveis em Carapicuíba e região ou via Uber Flash por conta do cliente.
+          </div>
+        </div>
+
+        <!-- Categoria 1: Frutas -->
+        <div class="catalog-category-block">
+          <h4 class="catalog-cat-heading">🍓 Recheios com Frutas Frescas (Bolos por kg)</h4>
+          
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Ninho com Morango</h4>
+              <p>Camadas generosas de brigadeiro de Leite Ninho cremoso com morangos frescos selecionados.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 90/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Ninho com Morango')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Ninho com Uva Verde</h4>
+              <p>Creme Ninho aveludado com uvas verdes sem semente, leve, refrescante e equilibrado.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 90/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Ninho com Uva Verde')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Ninho com Pêssego em Calda</h4>
+              <p>Massa macia com brigadeiro de Leite Ninho e pedaços suculentos de pêssego em calda.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 80/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Ninho com Pêssego')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Abacaxi com Coco</h4>
+              <p>Doce artesanal de abacaxi cozido com coco ralado fresco em creme sedoso.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Abacaxi com Coco')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Abacaxi com Doce de Leite</h4>
+              <p>Combinação perfeita entre doce de leite caseiro e a acidez suave do abacaxi fresco.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Abacaxi com Doce de Leite')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Ameixa com Doce de Leite ou Coco</h4>
+              <p>Sabor clássico afetivo de festa com ameixas pretas selecionadas e recheio cremoso.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 80/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo de Ameixa')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Morango com Brigadeiro Tradicional</h4>
+              <p>Brigadeiro gourmet ao leite intercalado com morangos frescos cortados à mão.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Morango com Brigadeiro')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Maracujá com Brigadeiro</h4>
+              <p>O equilíbrio sublime entre a trufa de maracujá artesanal e o brigadeiro aveludado.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Maracujá com Brigadeiro')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Prestígio Artesanal</h4>
+              <p>Camadas de brigadeiro de chocolate gourmet com beijinho de coco úmido e farto.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Prestígio')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Limão com Geleia de Morango</h4>
+              <p>Mousse cítrica de limão harmonizada com redução caseira de morangos silvestres.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Limão com Geleia de Morango')">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria 2: Gourmet -->
+        <div class="catalog-category-block">
+          <h4 class="catalog-cat-heading">🍫 Recheios Gourmet & Especiais (Bolos por kg)</h4>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Ninho com Nutella Pura</h4>
+              <p>Recheio farto de Leite Ninho combinado com camadas generosas de Nutella legítima.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 90/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Ninho com Nutella')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Brigadeiro de Nutella</h4>
+              <p>Brigadeiro estruturado preparado com Nutella autêntica e cacau nobre.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 90/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Brigadeiro de Nutella')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Dois Amores (Tradicional & Ninho)</h4>
+              <p>O encontro favorito: uma camada de brigadeiro preto tradicional e uma de brigadeiro branco Ninho.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Dois Amores')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Brigadeiro de Ninho / Chocolate Branco</h4>
+              <p>Brigadeiro gourmet de textura aveludada feito com puro Leite Ninho ou nobre chocolate branco.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Brigadeiro de Ninho')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Brigadeiro Meio Amargo</h4>
+              <p>Para paladares exigentes: sabor intenso de chocolate 50% cacau na medida exata.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 85/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Brigadeiro Meio Amargo')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Óreo Gourmet</h4>
+              <p>Creme de baunilha especial com pedacinhos crocantes do biscoito Óreo.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 80/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Óreo Gourmet')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Paçoca Especial</h4>
+              <p>Brigadeiro cremoso de amendoim artesanal com paçoca tostada esfarelada.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 80/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo de Paçoca')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Brigadeiro de Café</h4>
+              <p>Notas marcantes e sofisticadas de café harmonizadas com brigadeiro cremoso.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 80/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Brigadeiro de Café')">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria 3: Tradicionais & Bentô -->
+        <div class="catalog-category-block">
+          <h4 class="catalog-cat-heading">🧁 Recheios Tradicionais & Bentô Cakes</h4>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Brigadeiro Tradicional da Vovó</h4>
+              <p>O queridinho das festas: massa fofinha e brigadeiro de panela ao leite.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 75/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Brigadeiro Tradicional')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Beijinho Tradicional</h4>
+              <p>Massa leve com recheio tradicional de beijinho de coco artesanal bem molhadinho.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 75/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Beijinho Tradicional')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Mousse Artesanal (sem fruta)</h4>
+              <p>Recheio aerado, leve e refrescante na textura ideal para celebrações.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 75/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Mousse')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Doce de Leite Cremoso</h4>
+              <p>Doce de leite macio, suave e com sabor acolhedor de receita caseira.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 70/kg</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Doce de Leite')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bentô Cake na Marmitinha</h4>
+              <p>Mini bolo individual (aprox. 400g) com frase divertida ou afetiva e velinha.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">A partir de R$ 50</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bentô Cake')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Topper de Bolo Personalizado (Simples)</h4>
+              <p>Tema, nome e idade personalizados em papelaria para finalizar o bolo.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 10,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Topper de Bolo')">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoria 4: Caseiros & Brigadeiros -->
+        <div class="catalog-category-block">
+          <h4 class="catalog-cat-heading">🥮 Bolos Caseiros da Vovó & Cento de Brigadeiros</h4>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bolo Caseiro de Cenoura com Vulcão de Chocolate</h4>
+              <p>Fofinho e dourado com muita cobertura de brigadeiro tradicional.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 50,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Caseiro Cenoura com Chocolate')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bolo Caseiro de Chocolate com Brigadeiro</h4>
+              <p>Massa fofinha 100% cacau coberta com farta camada de brigadeiro cremoso.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 50,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Caseiro Chocolate com Brigadeiro')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bolo Caseiro de Limão c/ Mousse ou Coco c/ Beijinho</h4>
+              <p>Massa caseira macia acompanhada de cobertura cremosa artesanal.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 50,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Caseiro Cobertura Especial')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bolo Caseiro de Laranja com Calda ou Milho Cremoso</h4>
+              <p>Sabores frescos do campo, perfeitos para o café da tarde em família.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 45,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo Caseiro Laranja ou Milho')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Bolo de Fubá com Goiabada ou Fubá Simples</h4>
+              <p>Receita tradicional: Fubá Simples R$ 30 | Fubá com Goiabada derretida R$ 45.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 30 - R$ 45</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Bolo de Fubá')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Cento de Brigadeiros Tradicionais (100 unidades)</h4>
+              <p>Brigadeiro ao leite enrolado e Beijinho de coco tradicional para festas.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 120,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Cento de Brigadeiros Tradicionais')">Pedir</button>
+            </div>
+          </div>
+
+          <div class="catalog-item-row">
+            <div class="catalog-item-info">
+              <h4>Cento de Brigadeiros Gourmet (100 unidades)</h4>
+              <p>Sabores: Ninho, Óreo, Meio amargo, Bicho de pé, Café, Maracujá, Paçoca e Doce de leite.</p>
+            </div>
+            <div class="catalog-item-right">
+              <span class="catalog-item-price">R$ 155,00</span>
+              <button class="btn-add-order" onclick="sendWhatsApp('Cento de Brigadeiros Gourmet')">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--color-tiffany-soft); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border: 1px dashed var(--color-tiffany);">
+          <strong style="color: var(--color-brown); font-size: 1.1rem; display: block; margin-bottom: 0.35rem;">Quer personalizar o peso, recheio ou decoração?</strong>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin: 0 0 1.25rem;">
+            A Lorrany atende encomendas sob medida para aniversários, batizados, chás de bebê e eventos.
+          </p>
+          <a href="https://wa.me/5511985751371?text=Ol%C3%A1%20Lorrany!%20Gostaria%20de%20um%20or%C3%A7amento%20personalizado%20para%20minha%20festa." 
+             target="_blank" 
+             class="btn-primary-whatsapp" 
+             style="font-size: 0.95rem; padding: 0.8rem 2rem; display: inline-flex;">
+            Montar Orçamento no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Modal: Janela Flutuante com Carrossel 3D Coverflow por Tema
+       ========================================================================== -->
+  <div class="modal-backdrop" id="galleryCarouselModal" role="dialog" aria-modal="true" aria-labelledby="carouselModalTitle">
+    <div class="modal-window carousel-modal-window coverflow-modal-window">
+      <!-- Cabeçalho do Carrossel -->
+      <div class="modal-header carousel-modal-header">
+        <div class="carousel-title-group">
+          <span class="carousel-category-tag" id="carouselCategoryTag">Tema</span>
+          <h3 class="modal-title" id="carouselModalTitle">Nome do Tema</h3>
+          <span class="carousel-photo-count" id="carouselCounter">Foto 1 de 10</span>
+        </div>
+        <button class="modal-close-btn" id="closeCarouselBtn" aria-label="Fechar álbum">&times;</button>
+      </div>
+
+      <!-- Corpo do Carrossel com Palco 3D Coverflow -->
+      <div class="modal-body carousel-modal-body">
+        <div class="coverflow-stage" id="coverflowStage">
+          <!-- Seta Anterior -->
+          <button class="coverflow-nav-btn prev-btn" id="carouselPrevBtn" aria-label="Foto anterior" title="Foto anterior (Seta esquerda)">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Trilho 3D de Slides Coverflow -->
+          <div class="coverflow-track" id="coverflowTrack">
+            <!-- Slides renderizados dinamicamente via JavaScript -->
+          </div>
+
+          <!-- Seta Próximo -->
+          <button class="coverflow-nav-btn next-btn" id="carouselNextBtn" aria-label="Próxima foto" title="Próxima foto (Seta direita)">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Dica de Zoom -->
+        <div class="coverflow-zoom-hint">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span>Clique na foto central para ampliar em tela cheia com zoom</span>
+        </div>
+
+        <!-- Indicadores de Bolinhas (Dots) -->
+                <div class="carousel-dots-row" id="carouselDots" role="tablist" aria-label="Indicadores de fotos"></div>
+
+        <!-- Barra de Ação de Cardápio Integrada dentro da Galeria -->
+        <div class="carousel-modal-cardapio-bar" id="carouselCardapioBar">
+          <div class="carousel-cardapio-info">
+            <span class="carousel-cardapio-badge" id="carouselCardapioBadge">📖 Cardápio Especial</span>
+            <span class="carousel-cardapio-text" id="carouselCardapioText">Consulte preços, recheios e tamanhos completos</span>
+          </div>
+          <div class="carousel-cardapio-buttons">
+            <a href="Cardápio de Natal.pdf" target="_blank" rel="noopener noreferrer" class="btn-carousel-cardapio-pdf" id="carouselCardapioPdfBtn">
+              <span>📄 Abrir Cardápio (PDF)</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button type="button" class="btn-carousel-cardapio-view js-open-catalog" id="carouselCardapioViewBtn">
+              <span>📋 Ver Tabela de Preços</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Modal: Lightbox em Tela Cheia (Zoom nos Detalhes com Navegacao)
+       ========================================================================== -->
+  <div class="modal-backdrop lightbox-backdrop" id="fullscreenLightboxModal" role="dialog" aria-modal="true" aria-labelledby="fullscreenLightboxTitle">
+    <div class="lightbox-fullscreen-container">
+      <button class="lightbox-close-btn" id="closeFullscreenLightbox" aria-label="Fechar zoom">&times;</button>
+
+      <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" aria-label="Foto anterior" title="Foto anterior">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="lightbox-zoom-stage" id="lightboxZoomStage">
+        <img src="" alt="" id="fullscreenLightboxImg" class="lightbox-fullscreen-img">
+      </div>
+
+      <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" aria-label="Proxima foto" title="Proxima foto">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="lightbox-fullscreen-footer">
+        <span id="fullscreenLightboxTitle" class="lightbox-fullscreen-caption"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

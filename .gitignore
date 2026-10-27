@@ -1,0 +1,13 @@
+# Ambientes e scripts temporários
+*.py
+*.pyc
+__pycache__/
+*.tmp
+
+# Arquivos de backup
+*_backup.pdf
+*_backup_pre_images.pdf
+
+# Sistema
+.DS_Store
+Thumbs.db
