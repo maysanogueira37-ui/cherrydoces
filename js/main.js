@@ -16,6 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const WHATSAPP_NUMBER = '5511985751371';
   const INSTAGRAM_HANDLE = 'CherryDoces1';
 
+  // Medir dinamicamente a altura exata do cabeçalho para garantir espaçamento perfeito da Hero e Menu
+  function updateHeaderHeight() {
+    const siteHdr = document.querySelector('.site-header');
+    if (siteHdr) {
+      const h = Math.ceil(siteHdr.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--site-header-height', `${h}px`);
+    }
+  }
+  updateHeaderHeight();
+  window.addEventListener('resize', updateHeaderHeight);
+
   // Base de Dados dos Temas da Galeria
   const GALLERY_CATEGORIES = {
   "naked_cake": {
@@ -627,6 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. Partículas Ambientais Flutuantes (Neve / Estrelas no Natal; Ovos / Coelhinhos na Páscoa)
     renderSeasonalAmbientParticles(activeSeason);
+    setTimeout(updateHeaderHeight, 50);
   }
 
   function initSeasonalSystem() {
@@ -1440,6 +1452,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // Garantir scroll no topo ao terminar o carregamento e antes de descarregar
 window.addEventListener('load', () => {
   window.scrollTo(0, 0);
+  const siteHdr = document.querySelector('.site-header');
+  if (siteHdr) {
+    const h = Math.ceil(siteHdr.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--site-header-height', `${h}px`);
+  }
 });
 window.addEventListener('beforeunload', () => {
   window.scrollTo(0, 0);

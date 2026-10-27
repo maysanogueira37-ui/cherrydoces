@@ -4,6 +4,7 @@
    ========================================================================== */
 
 :root {
+  --site-header-height: 85px;
   /* Paleta Principal */
   --color-tiffany: #36a4a7;
   --color-tiffany-light: #52c2c5;
@@ -71,7 +72,7 @@ html {
 /* Espaçamento superior ao navegar por âncoras para não cobrir o cabeçalho fixo */
 section[id],
 footer[id] {
-  scroll-margin-top: 90px;
+  scroll-margin-top: calc(var(--site-header-height, 90px) + 15px);
 }
 
 body {
@@ -315,7 +316,7 @@ button {
    ========================================================================== */
 .hero-section {
   position: relative;
-  padding-top: 130px;
+  padding-top: calc(var(--site-header-height, 85px) + 2.2rem);
   padding-bottom: 70px;
   overflow: hidden;
   background: radial-gradient(circle at 10% 20%, rgba(82, 194, 197, 0.12) 0%, rgba(255, 250, 245, 0.4) 60%),
@@ -2273,7 +2274,7 @@ button {
 
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: var(--site-header-height, 80px);
     left: 0;
     width: 100%;
     background: #ffffff;
@@ -3843,7 +3844,7 @@ body.season-pascoa .header-container {
 
 body.season-natal .hero-section,
 body.season-pascoa .hero-section {
-  padding-top: 158px;
+  padding-top: calc(var(--site-header-height, 140px) + 2.4rem);
 }
 
 /* Estilização das Logos Sazonais (logo_natal.jpg e logo_pascoa.jpg) */
@@ -4204,7 +4205,7 @@ body.season-pascoa .hero-frame-seasonal-logo img {
 @media (max-width: 768px) {
   body.season-natal .hero-section,
   body.season-pascoa .hero-section {
-    padding-top: 145px;
+    padding-top: calc(var(--site-header-height, 160px) + 2rem);
   }
 
   .seasonal-top-ribbon {
@@ -4303,6 +4304,20 @@ body.season-pascoa .hero-frame-seasonal-logo img {
 
 /* Smartphone Pequeno (max-width: 480px) */
 @media (max-width: 480px) {
+  body.season-natal .hero-section,
+  body.season-pascoa .hero-section {
+    padding-top: calc(var(--site-header-height, 175px) + 1.8rem);
+  }
+
+  .hero-greeting-pill {
+    font-size: 0.81rem;
+    padding: 0.4rem 0.85rem;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+  }
   .hero-title {
     font-size: 1.95rem;
     line-height: 1.25;
