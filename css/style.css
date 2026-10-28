@@ -4799,25 +4799,74 @@ body.season-pascoa .hero-frame-seasonal-logo img {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65), 0 0 15px rgba(255, 215, 0, 0.25);
 }
 
-/* Foto do Produto */
+/* Foto do Produto Sem Zoom / 100% Visível */
 .lembrancinha-img-wrap {
   position: relative;
   width: 100%;
-  height: 230px;
-  background: #140906;
+  height: 280px;
+  background: radial-gradient(circle at center, #260e08 0%, #100402 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  border-bottom: 1.5px solid rgba(212, 175, 55, 0.35);
+  padding: 10px;
 }
 
 .lembrancinha-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.35s ease;
 }
 
 .lembrancinha-card:hover .lembrancinha-img {
-  transform: scale(1.05);
+  transform: scale(1.04);
+}
+
+/* Barra de Pílulas de Categoria e Destaque fora da foto */
+.lembrancinha-tags-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.lembrancinha-item-pill {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: #c41e3a;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.lembrancinha-item-pill.pill-gold {
+  background: #ffd700;
+  color: #1a0804 !important;
+  border: 1px solid #ffffff;
+}
+
+.lembrancinha-item-pill.pill-green {
+  background: #1b6535;
+  color: #ffffff !important;
+}
+
+.lembrancinha-theme-pill {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #ffd700 !important;
+  background: rgba(255, 215, 0, 0.14);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  padding: 3px 8px;
+  border-radius: 6px;
 }
 
 /* Badges sobre a foto */
