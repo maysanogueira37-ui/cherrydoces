@@ -4830,7 +4830,7 @@ body.season-pascoa .hero-frame-seasonal-logo img {
 .lembrancinha-tags-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.65rem;
 }
