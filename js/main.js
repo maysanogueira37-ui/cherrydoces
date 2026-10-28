@@ -513,6 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="seasonal-top-ribbon-inner">
             <span>🎄 <strong>Especial de Natal &amp; Réveillon Cherry Doces:</strong> Encomendas abertas até 20/12! ✨</span>
             <button type="button" class="seasonal-top-ribbon-cta js-open-catalog">📖 Cardápio de Natal</button>
+            <button type="button" class="seasonal-top-ribbon-cta btn-ribbon-lembrancinhas js-open-lembrancinhas" id="ribbonNatalLembrancinhasBtn">🎁 Lembrancinhas</button>
             <button type="button" class="seasonal-top-ribbon-cta" id="ribbonNatalGalleryBtn">🖼️ Fotos de Natal</button>
           </div>
         `;
@@ -572,6 +573,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="hero-seasonal-emblem-tag">🎄 Clima Natalino Cherry Doces</span>
               <div class="hero-seasonal-emblem-title">Sobremesas Exclusivas para a sua Ceia de Natal &amp; Ano Novo</div>
               <div class="hero-seasonal-emblem-actions-row">
+                <button type="button" class="hero-seasonal-emblem-btn btn-view-lembrancinhas js-open-lembrancinhas" id="heroNatalLembrancinhasLink">
+                  🎁 Lembrancinhas de Natal
+                </button>
                 <button type="button" class="hero-seasonal-emblem-btn btn-view-photos" id="heroNatalGalleryLink">
                   🖼️ Ver Fotos de Natal (11 Fotos)
                 </button>
@@ -713,6 +717,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <button class="btn-seasonal-cta btn-primary js-open-catalog">
                 📖 Ver Cardápio de Natal Completo
               </button>
+              <button class="btn-seasonal-cta btn-lembrancinhas js-open-lembrancinhas" id="btnOpenNatalLembrancinhas">
+                🎁 Lembrancinhas de Natal
+              </button>
               <button class="btn-seasonal-cta btn-outline" id="btnOpenNatalGallery">
                 🖼️ Ver Fotos dos Doces de Natal (11 Fotos)
               </button>
@@ -778,7 +785,18 @@ ${simulatorHtml}
       const btnPascoa = document.getElementById('btnOpenPascoaGallery');
       if (btnPascoa) btnPascoa.addEventListener('click', () => openCategoryCarousel('pascoa_especial'));
 
-      // Eventos para abrir o modal do cardápio a partir dos botões recém-injetados
+      // Eventos para abrir o modal do cardápio e das lembrancinhas a partir dos botões recém-injetados
+      document.querySelectorAll('.js-open-lembrancinhas').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const lModal = document.getElementById('lembrancinhasModal');
+          if (lModal) {
+            lModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
       document.querySelectorAll('#seasonalBannerMount .js-open-catalog, #seasonalTopRibbon .js-open-catalog').forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.preventDefault();
@@ -983,6 +1001,58 @@ ${simulatorHtml}
                   <p>Massa aromática super fofinha com cobertura delicada e raspas de limão frescas.</p>
                 </div>
                 <button class="btn-add-order" onclick="sendWhatsApp('Bolo Especial de Limão')">Pedir</button>
+              </div>
+            </div>
+
+            <!-- Destaque: Lembrancinhas de Natal com Fotos -->
+            <div class="catalog-lembrancinhas-feature">
+              <div class="catalog-lembrancinhas-header">
+                <h4 class="catalog-lembrancinhas-title">🎁 Lembrancinhas &amp; Mimos Doces de Natal</h4>
+                <button type="button" class="btn-seasonal-cta btn-lembrancinhas js-open-lembrancinhas" style="padding: 0.4rem 1rem; font-size: 0.82rem;">
+                  Ver Cardápio com Fotos &rarr;
+                </button>
+              </div>
+              <div class="catalog-lembrancinhas-list">
+                <div class="catalog-lembrancinha-mini-item">
+                  <img src="lembrancinhas/1.jpg" alt="Cubo Mágico Acredite na Magia do Natal" class="catalog-lembrancinha-mini-thumb">
+                  <div class="catalog-lembrancinha-mini-info">
+                    <h5>1. Cubo Mágico "Acredite na Magia"</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Cubo Mágico de Natal (R$ 15)')">Pedir</button>
+                </div>
+                <div class="catalog-lembrancinha-mini-item">
+                  <img src="lembrancinhas/2.jpg" alt="Quarteto Trufado Ouro Imperial" class="catalog-lembrancinha-mini-thumb">
+                  <div class="catalog-lembrancinha-mini-info">
+                    <h5>2. Quarteto Trufado Ouro Imperial</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Quarteto Trufado Ouro Imperial (R$ 15)')">Pedir</button>
+                </div>
+                <div class="catalog-lembrancinha-mini-item">
+                  <img src="lembrancinhas/3.jpg" alt="Pote Encantado de Biscoitos Amanteigados" class="catalog-lembrancinha-mini-thumb">
+                  <div class="catalog-lembrancinha-mini-info">
+                    <h5>3. Pote Biscoitos Amanteigados</h5>
+                    <span>R$ 20,00</span>
+                  </div>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Pote Biscoitos Amanteigados (R$ 20)')">Pedir</button>
+                </div>
+                <div class="catalog-lembrancinha-mini-item">
+                  <img src="lembrancinhas/4.jpg" alt="Vitrine Doce Feliz Natal" class="catalog-lembrancinha-mini-thumb">
+                  <div class="catalog-lembrancinha-mini-info">
+                    <h5>4. Vitrine Doce "Feliz Natal"</h5>
+                    <span>R$ 20,00</span>
+                  </div>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Vitrine Doce Feliz Natal (R$ 20)')">Pedir</button>
+                </div>
+                <div class="catalog-lembrancinha-mini-item">
+                  <img src="lembrancinhas/5.jpg" alt="Mimo Cristal Boas Festas" class="catalog-lembrancinha-mini-thumb">
+                  <div class="catalog-lembrancinha-mini-info">
+                    <h5>5. Mimo Cristal "Boas Festas"</h5>
+                    <span>R$ 15,00</span>
+                  </div>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Mimo Cristal Boas Festas (R$ 15)')">Pedir</button>
+                </div>
               </div>
             </div>
 
@@ -1502,6 +1572,20 @@ ${simulatorHtml}
 
   // Inicializar Sistema Sazonal Automatizado
   initSeasonalSystem();
+
+  // 5.1 Modal de Lembrancinhas de Natal
+  const lembrancinhasModal = document.getElementById('lembrancinhasModal');
+  document.querySelectorAll('.js-open-lembrancinhas').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (catalogModal) catalogModal.classList.remove('active');
+      if (carouselModal) carouselModal.classList.remove('active');
+      if (lembrancinhasModal) {
+        lembrancinhasModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
 
   // 6. Modal do Cardápio Completo (Cardápio Cherry Doces.pdf)
   const catalogModal = document.getElementById('catalogModal');

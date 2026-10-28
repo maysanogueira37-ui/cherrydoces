@@ -1404,6 +1404,170 @@
     </div>
   </div>
 
+  <!-- ==========================================================================
+       Modal: Cardápio de Lembrancinhas de Natal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="lembrancinhasModal" role="dialog" aria-modal="true" aria-labelledby="lembrancinhasModalTitle">
+    <div class="modal-window lembrancinhas-modal-window">
+      <div class="modal-header lembrancinhas-modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span style="font-size: 1.8rem; line-height: 1;">🎁</span>
+          <div>
+            <h3 class="modal-title" id="lembrancinhasModalTitle">Lembrancinhas &amp; Mimos Doces de Natal</h3>
+            <span class="lembrancinhas-modal-subtitle">Edição Especial de Fim de Ano • Cherry Doces</span>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeLembrancinhasBtn" aria-label="Fechar cardápio de lembrancinhas">&times;</button>
+      </div>
+
+      <div class="modal-body lembrancinhas-modal-body">
+        <!-- Banner de Boas-Vindas e Prazo -->
+        <div class="lembrancinhas-notice-bar">
+          <div class="lembrancinhas-notice-icon">🎄</div>
+          <div class="lembrancinhas-notice-text">
+            <strong>Mimos Artesanais Perfeitos para Presentear!</strong>
+            <p>Embalagens decoradas e recheadas com o melhor chocolate e doces artesanais da Cherry Doces. Ideais para amigos, familiares, confraternizações e lembrancinhas corporativas. <strong>Encomendas abertas até 20/12!</strong></p>
+          </div>
+        </div>
+
+        <!-- Grade com os 5 Doces de Lembrancinhas -->
+        <div class="lembrancinhas-grid">
+          <!-- Item 1: R$ 15 -->
+          <article class="lembrancinha-card">
+            <div class="lembrancinha-img-wrap">
+              <img src="lembrancinhas/1.jpg" alt="Cubo Mágico Acredite na Magia do Natal - Cherry Doces" class="lembrancinha-img" loading="lazy">
+              <span class="lembrancinha-badge badge-red">Item 01 • R$ 15</span>
+              <span class="lembrancinha-tag-theme">✨ Sucesso de Vendas</span>
+            </div>
+            <div class="lembrancinha-info">
+              <div class="lembrancinha-header-row">
+                <h4 class="lembrancinha-title">Cubo Mágico "Acredite na Magia do Natal"</h4>
+                <span class="lembrancinha-price">R$ 15,00</span>
+              </div>
+              <p class="lembrancinha-desc">
+                Caixinha temática 3D colecionável com personagens natalinos (Papai Noel, Gingerbread ou Boneco de Neve) com os dizeres "Acredite na Magia do Natal", recheada com docinhos artesanais finos. Um mimo fofo e apaixonante!
+              </p>
+              <div class="lembrancinha-footer-action">
+                <span class="lembrancinha-highlight-tag">🍫 Doces Artesanais</span>
+                <button type="button" class="btn-order-lembrancinha" onclick="sendWhatsApp('Cubo Mágico Acredite na Magia do Natal (R$ 15)', 'Olá, Lorrany! Gostaria de encomendar a Lembrancinha de Natal: Cubo Mágico Acredite na Magia do Natal (R$ 15,00)!')">
+                  Pedir no WhatsApp 💬
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: R$ 15 -->
+          <article class="lembrancinha-card">
+            <div class="lembrancinha-img-wrap">
+              <img src="lembrancinhas/2.jpg" alt="Quarteto Trufado Ouro Imperial - Cherry Doces" class="lembrancinha-img" loading="lazy">
+              <span class="lembrancinha-badge badge-gold">Item 02 • R$ 15</span>
+              <span class="lembrancinha-tag-theme">⭐ Fino &amp; Elegante</span>
+            </div>
+            <div class="lembrancinha-info">
+              <div class="lembrancinha-header-row">
+                <h4 class="lembrancinha-title">Quarteto Trufado Ouro Imperial</h4>
+                <span class="lembrancinha-price">R$ 15,00</span>
+              </div>
+              <p class="lembrancinha-desc">
+                Caixa kraft com tampa de visor transparente contendo 4 trufas gourmet aveludadas artesanais, finalizadas com um luxuoso pó dourado brilhante comestível. Pura sofisticação e sabor inesquecível.
+              </p>
+              <div class="lembrancinha-footer-action">
+                <span class="lembrancinha-highlight-tag">✨ Trufas Douradas</span>
+                <button type="button" class="btn-order-lembrancinha" onclick="sendWhatsApp('Quarteto Trufado Ouro Imperial (R$ 15)', 'Olá, Lorrany! Gostaria de encomendar a Lembrancinha de Natal: Quarteto Trufado Ouro Imperial (R$ 15,00)!')">
+                  Pedir no WhatsApp 💬
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: R$ 20 -->
+          <article class="lembrancinha-card">
+            <div class="lembrancinha-img-wrap">
+              <img src="lembrancinhas/3.jpg" alt="Pote Encantado de Biscoitos Amanteigados - Cherry Doces" class="lembrancinha-img" loading="lazy">
+              <span class="lembrancinha-badge badge-green">Item 03 • R$ 20</span>
+              <span class="lembrancinha-tag-theme">🎀 Laço de Cetim</span>
+            </div>
+            <div class="lembrancinha-info">
+              <div class="lembrancinha-header-row">
+                <h4 class="lembrancinha-title">Pote Encantado de Biscoitos Amanteigados</h4>
+                <span class="lembrancinha-price">R$ 20,00</span>
+              </div>
+              <p class="lembrancinha-desc">
+                Pote cristalino decorado com laço de cetim vermelho farto e tag natalina "Boas Festas", recheado com biscoitinhos artesanais natalinos amanteigados crocantes que derretem na boca. O par perfeito para o café da ceia!
+              </p>
+              <div class="lembrancinha-footer-action">
+                <span class="lembrancinha-highlight-tag">🍪 Biscoitos Artesanais</span>
+                <button type="button" class="btn-order-lembrancinha" onclick="sendWhatsApp('Pote Encantado de Biscoitos Amanteigados (R$ 20)', 'Olá, Lorrany! Gostaria de encomendar a Lembrancinha de Natal: Pote Encantado de Biscoitos Amanteigados (R$ 20,00)!')">
+                  Pedir no WhatsApp 💬
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: R$ 20 -->
+          <article class="lembrancinha-card">
+            <div class="lembrancinha-img-wrap">
+              <img src="lembrancinhas/4.jpg" alt="Vitrine Doce Feliz Natal com Chocolates Nobres - Cherry Doces" class="lembrancinha-img" loading="lazy">
+              <span class="lembrancinha-badge badge-red">Item 04 • R$ 20</span>
+              <span class="lembrancinha-tag-theme">🎁 Janela Festiva</span>
+            </div>
+            <div class="lembrancinha-info">
+              <div class="lembrancinha-header-row">
+                <h4 class="lembrancinha-title">Vitrine Doce "Feliz Natal" de Chocolates Nobres</h4>
+                <span class="lembrancinha-price">R$ 20,00</span>
+              </div>
+              <p class="lembrancinha-desc">
+                Estojo vermelho natalino em formato janela com visor panorâmico transparente e acabamento clássico "Feliz Natal", recheado com barrinhas e bombons de puro chocolate nobre artesanal. Um presente que impressiona à primeira vista!
+              </p>
+              <div class="lembrancinha-footer-action">
+                <span class="lembrancinha-highlight-tag">🍫 Chocolate Nobre</span>
+                <button type="button" class="btn-order-lembrancinha" onclick="sendWhatsApp('Vitrine Doce Feliz Natal (R$ 20)', 'Olá, Lorrany! Gostaria de encomendar a Lembrancinha de Natal: Vitrine Doce Feliz Natal de Chocolates Nobres (R$ 20,00)!')">
+                  Pedir no WhatsApp 💬
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: R$ 15 -->
+          <article class="lembrancinha-card">
+            <div class="lembrancinha-img-wrap">
+              <img src="lembrancinhas/5.jpg" alt="Mimo Cristal Boas Festas com Laço Real de Cetim - Cherry Doces" class="lembrancinha-img" loading="lazy">
+              <span class="lembrancinha-badge badge-gold">Item 05 • R$ 15</span>
+              <span class="lembrancinha-tag-theme">🎄 Clássico de Natal</span>
+            </div>
+            <div class="lembrancinha-info">
+              <div class="lembrancinha-header-row">
+                <h4 class="lembrancinha-title">Mimo Cristal "Boas Festas" com Laço Real</h4>
+                <span class="lembrancinha-price">R$ 15,00</span>
+              </div>
+              <p class="lembrancinha-desc">
+                Caixa acrílica cristal transparente com laço de cetim vermelho nobre volumoso e tag "Boas Festas", recheada com deliciosos doces/trufas artesanais Cherry Doces. Charmosa, elegante e muito saborosa.
+              </p>
+              <div class="lembrancinha-footer-action">
+                <span class="lembrancinha-highlight-tag">🎀 Laço Cetim Luxo</span>
+                <button type="button" class="btn-order-lembrancinha" onclick="sendWhatsApp('Mimo Cristal Boas Festas (R$ 15)', 'Olá, Lorrany! Gostaria de encomendar a Lembrancinha de Natal: Mimo Cristal Boas Festas com Laço Real (R$ 15,00)!')">
+                  Pedir no WhatsApp 💬
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Rodapé do Modal -->
+        <div class="lembrancinhas-modal-footer">
+          <div class="lembrancinhas-footer-info">
+            <span>💳 Cartão de Débito, Crédito e PIX</span>
+            <span>📍 Retirada em Carapicuíba ou entrega via Uber Flash</span>
+            <span>📱 Encomendas: (11) 98575-1371</span>
+          </div>
+          <button type="button" class="btn-seasonal-cta btn-primary" onclick="sendWhatsApp('', 'Olá, Lorrany! Gostaria de fazer uma encomenda de Lembrancinhas de Natal da Cherry Doces!')">
+            💬 Falar com a Lorrany no WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Script JS -->
   <script src="js/main.js"></script>
 </body>
