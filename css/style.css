@@ -4674,96 +4674,136 @@ body.season-pascoa .hero-frame-seasonal-logo img {
 /* Janela Modal do Cardápio de Lembrancinhas */
 .lembrancinhas-modal-window {
   max-width: 960px;
-  background: #1e0e0a;
+  background: #180905;
   color: #ffffff;
-  border: 2px solid #d4af37;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+  border: 2px solid #ffd700;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.25);
   border-radius: var(--radius-lg);
 }
 
 .lembrancinhas-modal-header {
-  background: linear-gradient(135deg, #2b1109 0%, #441712 100%);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
-  padding: 1.25rem 1.6rem;
+  background: linear-gradient(135deg, #4a1510 0%, #260a07 100%);
+  border-bottom: 2px solid #d4af37;
+  padding: 1.35rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lembrancinhas-modal-header .modal-title {
+  color: #ffffff !important;
+  font-family: var(--font-heading) !important;
+  font-size: 1.55rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  margin: 0;
 }
 
 .lembrancinhas-modal-subtitle {
   display: block;
-  font-size: 0.85rem;
-  color: #d4af37;
-  margin-top: 0.2rem;
-  font-weight: 600;
+  font-size: 0.92rem;
+  color: #ffd700 !important;
+  margin-top: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.lembrancinhas-modal-header .modal-close-btn {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  font-size: 1.6rem !important;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lembrancinhas-modal-header .modal-close-btn:hover {
+  background: #c41e3a !important;
+  border-color: #ffd700 !important;
+  color: #ffffff !important;
+  transform: rotate(90deg);
 }
 
 .lembrancinhas-modal-body {
-  padding: 1.5rem;
+  padding: 1.6rem;
   max-height: calc(85vh - 130px);
   overflow-y: auto;
 }
 
-/* Banner Informativo no Topo do Modal */
+/* Banner Informativo no Topo do Modal com Alto Contraste */
 .lembrancinhas-notice-bar {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(196, 30, 58, 0.2) 100%);
-  border: 1.5px dashed rgba(212, 175, 55, 0.5);
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.35) 0%, rgba(212, 175, 55, 0.22) 100%);
+  border: 2px dashed #ffd700;
   border-radius: var(--radius-md);
-  padding: 1rem 1.35rem;
+  padding: 1.15rem 1.45rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 1.1rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .lembrancinhas-notice-icon {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .lembrancinhas-notice-text strong {
   display: block;
-  color: #ffd700;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
+  color: #ffd700 !important;
+  font-size: 1.08rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .lembrancinhas-notice-text p {
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.88rem;
-  line-height: 1.45;
+  color: #ffffff !important;
+  font-size: 0.92rem;
+  line-height: 1.5;
   margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Grade de Lembrancinhas */
 .lembrancinhas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.35rem;
-  margin-bottom: 1.5rem;
+  gap: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
-/* Card Individual */
+/* Card Individual com Alto Destaque e Contraste */
 .lembrancinha-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: linear-gradient(180deg, #2b110c 0%, #190905 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
   border-radius: var(--radius-md);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
 }
 
 .lembrancinha-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(212, 175, 55, 0.7);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
-  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-5px);
+  border-color: #ffd700;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65), 0 0 15px rgba(255, 215, 0, 0.25);
 }
 
 /* Foto do Produto */
 .lembrancinha-img-wrap {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 230px;
   background: #140906;
   overflow: hidden;
 }
@@ -4785,47 +4825,51 @@ body.season-pascoa .hero-frame-seasonal-logo img {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: var(--radius-full);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .lembrancinha-badge.badge-red {
   background: #c41e3a;
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .lembrancinha-badge.badge-gold {
-  background: #d4af37;
+  background: #ffd700;
   color: #210e07;
+  border: 1px solid #ffffff;
 }
 
 .lembrancinha-badge.badge-green {
   background: #1b6535;
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .lembrancinha-tag-theme {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(4px);
   color: #ffd700;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 3px 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 4px 10px;
   border-radius: 6px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
+  border: 1px solid #ffd700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Informações do Produto */
 .lembrancinha-info {
-  padding: 1.15rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -4836,33 +4880,35 @@ body.season-pascoa .hero-frame-seasonal-logo img {
   align-items: flex-start;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.65rem;
 }
 
 .lembrancinha-title {
-  color: #ffffff;
-  font-size: 1.05rem;
-  font-weight: 700;
+  color: #ffffff !important;
+  font-size: 1.15rem;
+  font-weight: 800;
   margin: 0;
   line-height: 1.3;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .lembrancinha-price {
-  font-size: 1.18rem;
-  font-weight: 800;
-  color: #ffd700;
-  background: rgba(212, 175, 55, 0.15);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  padding: 3px 10px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #1a0804 !important;
+  background: linear-gradient(135deg, #ffd700 0%, #d4af37 100%) !important;
+  border: 1px solid #ffffff;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
   white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.5);
 }
 
 .lembrancinha-desc {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.86rem;
-  line-height: 1.45;
-  margin-bottom: 1.1rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 1.15rem;
   flex: 1;
 }
 
@@ -4872,44 +4918,46 @@ body.season-pascoa .hero-frame-seasonal-logo img {
   align-items: center;
   justify-content: space-between;
   gap: 0.6rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 0.95rem;
 }
 
 .lembrancinha-highlight-tag {
-  font-size: 0.78rem;
-  color: #ffd1dc;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 3px 8px;
-  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffd700 !important;
+  background: rgba(255, 215, 0, 0.15) !important;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 
 .btn-order-lembrancinha {
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-  color: #ffffff;
-  border: none;
-  font-size: 0.84rem;
-  font-weight: 700;
-  padding: 0.45rem 1rem;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 0.5rem 1.1rem;
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: all var(--transition-fast);
   white-space: nowrap;
-  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 3px 12px rgba(37, 211, 102, 0.45);
 }
 
 .btn-order-lembrancinha:hover {
+  background: linear-gradient(135deg, #2ee672 0%, #17a595 100%);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
-  filter: brightness(1.08);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.65);
 }
 
 /* Rodapé do Modal */
 .lembrancinhas-modal-footer {
-  background: rgba(0, 0, 0, 0.35);
-  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  background: #120604;
+  border-top: 2px solid rgba(212, 175, 55, 0.45);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  padding: 1rem 1.4rem;
+  padding: 1.15rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4920,9 +4968,10 @@ body.season-pascoa .hero-frame-seasonal-logo img {
 .lembrancinhas-footer-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.82);
+  gap: 0.3rem;
+  font-size: 0.86rem;
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
 /* Bloco de Lembrancinhas dentro do Modal de Cardápio Completo */
