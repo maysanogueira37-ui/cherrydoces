@@ -1014,7 +1014,7 @@ ${simulatorHtml}
               </div>
               <div class="catalog-lembrancinhas-list">
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/1.jpg" alt="Cubo Mágico Acredite na Magia do Natal" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/1.jpg?v=3" alt="Cubo Mágico Acredite na Magia do Natal" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
                     <h5>1. Cubo Mágico "Acredite na Magia"</h5>
                     <span>R$ 15,00</span>
@@ -1022,15 +1022,15 @@ ${simulatorHtml}
                   <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Cubo Mágico de Natal (R$ 15)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/2.jpg" alt="Quarteto Trufado Ouro Imperial" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/2.jpg?v=3" alt="Caixinha Encanto de Natal" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>2. Quarteto Trufado Ouro Imperial</h5>
+                    <h5>2. Caixinha Encanto de Natal</h5>
                     <span>R$ 15,00</span>
                   </div>
-                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Quarteto Trufado Ouro Imperial (R$ 15)')">Pedir</button>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Caixinha Encanto de Natal (R$ 15)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/3.jpg" alt="Pote Encantado de Biscoitos Amanteigados" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/3.jpg?v=3" alt="Pote Encantado de Biscoitos Amanteigados" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
                     <h5>3. Pote Biscoitos Amanteigados</h5>
                     <span>R$ 20,00</span>
@@ -1038,7 +1038,7 @@ ${simulatorHtml}
                   <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Pote Biscoitos Amanteigados (R$ 20)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/4.jpg" alt="Vitrine Doce Feliz Natal" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/4.jpg?v=3" alt="Vitrine Doce Feliz Natal" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
                     <h5>4. Vitrine Doce "Feliz Natal"</h5>
                     <span>R$ 20,00</span>
@@ -1046,7 +1046,7 @@ ${simulatorHtml}
                   <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Vitrine Doce Feliz Natal (R$ 20)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/5.jpg" alt="Mimo Cristal Boas Festas" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/5.jpg?v=3" alt="Mimo Cristal Boas Festas" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
                     <h5>5. Mimo Cristal "Boas Festas"</h5>
                     <span>R$ 15,00</span>
