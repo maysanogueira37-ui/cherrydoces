@@ -1014,17 +1014,17 @@ ${simulatorHtml}
               </div>
               <div class="catalog-lembrancinhas-list">
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/1.jpg?v=3" alt="Cubo Mágico Acredite na Magia do Natal" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/1.jpg?v=3" alt="Cubo Mágico de Mini Trufas" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>1. Cubo Mágico "Acredite na Magia"</h5>
-                    <span>R$ 15,00</span>
+                    <h5>Cubo Mágico de Mini Trufas</h5>
+                    <span>R$ 20,00</span>
                   </div>
-                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Cubo Mágico de Natal (R$ 15)')">Pedir</button>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Cubo Mágico de Mini Trufas (R$ 20)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
                   <img src="lembrancinhas/2.jpg?v=3" alt="Caixinha Encanto de Natal" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>2. Caixinha Encanto de Natal</h5>
+                    <h5>Caixinha Encanto de Natal</h5>
                     <span>R$ 15,00</span>
                   </div>
                   <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Caixinha Encanto de Natal (R$ 15)')">Pedir</button>
@@ -1032,26 +1032,26 @@ ${simulatorHtml}
                 <div class="catalog-lembrancinha-mini-item">
                   <img src="lembrancinhas/3.jpg?v=3" alt="Pote Encantado de Biscoitos Amanteigados" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>3. Pote Biscoitos Amanteigados</h5>
+                    <h5>Pote Encantado de Biscoitos Amanteigados</h5>
                     <span>R$ 20,00</span>
                   </div>
-                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Pote Biscoitos Amanteigados (R$ 20)')">Pedir</button>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Pote Encantado de Biscoitos Amanteigados (R$ 20)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/4.jpg?v=3" alt="Vitrine Doce Feliz Natal" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/4.jpg?v=3" alt="Barra Natalina de Chocolate Recheada" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>4. Vitrine Doce "Feliz Natal"</h5>
+                    <h5>Barra Natalina de Chocolate Recheada</h5>
                     <span>R$ 20,00</span>
                   </div>
-                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Vitrine Doce Feliz Natal (R$ 20)')">Pedir</button>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Barra Natalina de Chocolate Recheada (R$ 20)')">Pedir</button>
                 </div>
                 <div class="catalog-lembrancinha-mini-item">
-                  <img src="lembrancinhas/5.jpg?v=3" alt="Mimo Cristal Boas Festas" class="catalog-lembrancinha-mini-thumb">
+                  <img src="lembrancinhas/5.jpg?v=3" alt="Bites de Brownie Natalino" class="catalog-lembrancinha-mini-thumb">
                   <div class="catalog-lembrancinha-mini-info">
-                    <h5>5. Mimo Cristal "Boas Festas"</h5>
+                    <h5>Bites de Brownie Natalino</h5>
                     <span>R$ 15,00</span>
                   </div>
-                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Mimo Cristal Boas Festas (R$ 15)')">Pedir</button>
+                  <button class="btn-add-order" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" onclick="sendWhatsApp('Bites de Brownie Natalino (R$ 15)')">Pedir</button>
                 </div>
               </div>
             </div>
